@@ -7,6 +7,7 @@ import SolutionsSection from "@/components/SolutionsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
+import FAQSection from "@/components/FAQSection";
 
 const Index = () => {
   const schema = {
@@ -35,6 +36,7 @@ const Index = () => {
         title="Mediafy AI - Automatyzacje AI, Workflow n8n, Agenci AI dla Biznesu"
         description="Transformujemy biznes dzięki AI. Automatyzacje procesów, workflow n8n, agenci AI i optymalizacje firm. Zwiększ wydajność o 97% z Mediafy AI."
         keywords="automatyzacje AI, AI workflow, automatyzacje n8n, AI w biznesie, optymalizacje z AI, agenci AI"
+        canonical="https://mediafy.ai/"
         schema={schema}
       />
       <div className="min-h-screen bg-background text-foreground">
@@ -44,6 +46,7 @@ const Index = () => {
         <ProcessSection />
         <TestimonialsSection />
         <SolutionsSection />
+        <FAQSection />
         <ContactSection />
         <Footer />
       </div>

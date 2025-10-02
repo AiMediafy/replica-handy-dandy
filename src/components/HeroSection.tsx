@@ -8,7 +8,7 @@ const HeroSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="flex items-center gap-2 text-primary text-sm">
-              <Sparkles className="w-4 h-4" />
+              <Sparkles className="w-4 h-4" aria-hidden="true" />
               <span>Przyszłość biznesu już teraz</span>
             </div>
 
@@ -35,8 +35,8 @@ const HeroSection = () => {
           </div>
 
           <div className="relative flex items-center justify-center">
-            <div className="relative w-80 h-80">
-              <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+              <div className="relative w-80 h-80" role="img" aria-label="Wizualizacja AI - ikona sztucznej inteligencji reprezentująca innowacyjne rozwiązania technologiczne">
+                <div className="absolute inset-0 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
               <div className="absolute inset-10 border border-primary/30 rounded-full"></div>
               <div className="absolute inset-20 border border-primary/40 rounded-full"></div>
               <div className="absolute inset-0 flex items-center justify-center">

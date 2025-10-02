@@ -62,6 +62,33 @@ const solutions = [
     problem: "Przeprowadzanie preselekcji CV zajmuje zbyt dużo czasu działu HR",
     tags: ["HR", "Rekrutacja", "Automatyzacja"],
     price: "Od 3,999 zł/mies"
+  },
+  {
+    id: "sentiment-analysis",
+    icon: MessageSquare,
+    title: "Analiza Sentymentu Opinii",
+    shortDescription: "Automatyczna analiza nastrojów klientów z opinii, recenzji i mediów społecznościowych.",
+    problem: "Trudność w monitorowaniu i analizie tysięcy opinii klientów",
+    tags: ["Analityka", "Marketing", "Monitoring"],
+    price: "Od 2,799 zł/mies"
+  },
+  {
+    id: "lead-scoring-ai",
+    icon: Users,
+    title: "Lead Scoring z AI",
+    shortDescription: "Automatyczna ocena i priorytetyzacja potencjalnych klientów na podstawie AI.",
+    problem: "Zespół sprzedaży traci czas na niekonwertujących leadów",
+    tags: ["Sprzedaż", "CRM", "Automatyzacja"],
+    price: "Od 3,299 zł/mies"
+  },
+  {
+    id: "inventory-optimization",
+    icon: ShoppingCart,
+    title: "Optymalizacja Stanów Magazynowych",
+    shortDescription: "AI przewiduje zapotrzebowanie i automatycznie zarządza stanem magazynowym.",
+    problem: "Nadmierne zapasy lub brak produktów na stanie",
+    tags: ["Logistyka", "E-commerce", "Predykcja"],
+    price: "Od 4,499 zł/mies"
   }
 ];
 
@@ -88,6 +115,7 @@ const Solutions = () => {
         title="Gotowe Rozwiązania AI - Workflow i Agenci do Wdrożenia | Mediafy AI"
         description="Katalog gotowych rozwiązań AI i workflow n8n. Chatboty, automatyzacje email, systemy rezerwacji i więcej. Szybkie wdrożenie dla Twojej firmy."
         keywords="gotowe rozwiązania AI, AI workflow, automatyzacje n8n, chatbot AI, automatyzacja biznesu"
+        canonical="https://mediafy.ai/rozwiazania"
         schema={schema}
       />
       <div className="min-h-screen bg-background text-foreground">

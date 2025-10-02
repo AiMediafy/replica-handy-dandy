@@ -6,9 +6,10 @@ interface SEOProps {
   keywords?: string;
   ogImage?: string;
   schema?: object;
+  canonical?: string;
 }
 
-const SEO = ({ title, description, keywords, ogImage, schema }: SEOProps) => {
+const SEO = ({ title, description, keywords, ogImage, schema, canonical }: SEOProps) => {
   useEffect(() => {
     document.title = title;
     
@@ -53,7 +54,17 @@ const SEO = ({ title, description, keywords, ogImage, schema }: SEOProps) => {
       }
       scriptTag.textContent = JSON.stringify(schema);
     }
-  }, [title, description, keywords, ogImage, schema]);
+
+    if (canonical) {
+      let linkTag = document.querySelector('link[rel="canonical"]');
+      if (!linkTag) {
+        linkTag = document.createElement("link");
+        linkTag.setAttribute("rel", "canonical");
+        document.head.appendChild(linkTag);
+      }
+      linkTag.setAttribute("href", canonical);
+    }
+  }, [title, description, keywords, ogImage, schema, canonical]);
 
   return null;
 };

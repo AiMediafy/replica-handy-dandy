@@ -34,12 +34,105 @@ const blogPostsData: Record<string, any> = {
       <h3>Przyszłość już teraz</h3>
       <p>Przewidujemy, że do końca 2024 roku ponad 80% firm B2C będzie wykorzystywać AI w obsłudze klienta. Te, które nie zdecydują się na transformację cyfrową, mogą stracić przewagę konkurencyjną.</p>
     `
+  },
+  "automatyzacje-n8n-przewodnik": {
+    title: "N8n - kompletny przewodnik po automatyzacji workflow",
+    category: "Automatyzacja",
+    date: "10 marca 2024",
+    readTime: "8 min",
+    content: `
+      <p>N8n to open-source'owa platforma do automatyzacji workflow, która pozwala łączyć różne aplikacje i tworzyć zaawansowane procesy biznesowe bez pisania kodu.</p>
+
+      <h2>Dlaczego n8n?</h2>
+      <p>W przeciwieństwie do konkurencji jak Zapier czy Make, n8n oferuje:</p>
+      <ul>
+        <li>Pełną kontrolę nad danymi (self-hosting)</li>
+        <li>Brak limitów na operacje</li>
+        <li>400+ gotowych integracji</li>
+        <li>Niższe koszty przy większej skali</li>
+      </ul>
+
+      <h2>Praktyczne zastosowania</h2>
+      <p>N8n doskonale sprawdza się w automatyzacji:</p>
+
+      <h3>1. Marketing automation</h3>
+      <p>Automatyczne wysyłanie spersonalizowanych kampanii email, synchronizacja leadów między systemami, tworzenie raportów marketingowych.</p>
+
+      <h3>2. Obsługa klienta</h3>
+      <p>Automatyczne tworzenie ticketów z emaili, routing zgłoszeń do odpowiednich działów, integracja z chatbotami AI.</p>
+
+      <h3>3. E-commerce</h3>
+      <p>Synchronizacja zamówień, automatyzacja wysyłki potwierdzeń, zarządzanie stanami magazynowymi.</p>
+
+      <h2>Pierwsze kroki</h2>
+      <p>Zacznij od prostych workflow łączących 2-3 aplikacje. Stopniowo rozbudowuj o dodatkowe kroki i logikę warunkową. Pamiętaj o testowaniu każdego workflow przed wdrożeniem produkcyjnym.</p>
+
+      <h3>Best practices</h3>
+      <ul>
+        <li>Dokumentuj złożone workflow</li>
+        <li>Używaj error handlerów</li>
+        <li>Monitoruj wykonania</li>
+        <li>Optymalizuj najczęściej uruchamiane procesy</li>
+      </ul>
+    `
+  },
+  "roi-z-wdrozen-ai": {
+    title: "ROI z wdrożeń AI - case study 3 firm",
+    category: "Case Studies",
+    date: "5 marca 2024",
+    readTime: "6 min",
+    content: `
+      <p>Analizujemy realne wdrożenia AI w trzech różnych firmach i mierzymy zwrot z inwestycji po pierwszym roku użytkowania.</p>
+
+      <h2>Case 1: E-commerce - Chatbot obsługi klienta</h2>
+      <p><strong>Branża:</strong> Sprzedaż online, 50 pracowników</p>
+      <p><strong>Wdrożenie:</strong> Chatbot AI obsługujący standardowe zapytania</p>
+      <p><strong>Koszt:</strong> 2,999 zł/mies (35,988 zł/rok)</p>
+
+      <h3>Rezultaty po roku:</h3>
+      <ul>
+        <li>Obsłużonych 45,000 konwersacji automatycznie</li>
+        <li>Oszczędność 2 etatów obsługi klienta (180,000 zł/rok)</li>
+        <li>Wzrost satysfakcji klientów o 35%</li>
+        <li><strong>ROI: 400%</strong></li>
+      </ul>
+
+      <h2>Case 2: Firma produkcyjna - Przetwarzanie dokumentów</h2>
+      <p><strong>Branża:</strong> Produkcja, 200 pracowników</p>
+      <p><strong>Wdrożenie:</strong> System OCR do przetwarzania faktur</p>
+      <p><strong>Koszt:</strong> 2,499 zł/mies (29,988 zł/rok)</p>
+
+      <h3>Rezultaty po roku:</h3>
+      <ul>
+        <li>Przetworzonych 24,000 dokumentów</li>
+        <li>Oszczędność 1.5 etatu księgowości (90,000 zł/rok)</li>
+        <li>Redukcja błędów o 95%</li>
+        <li><strong>ROI: 200%</strong></li>
+      </ul>
+
+      <h2>Case 3: Agencja marketingowa - Email automation</h2>
+      <p><strong>Branża:</strong> Marketing, 30 pracowników</p>
+      <p><strong>Wdrożenie:</strong> Automatyzacja kampanii emailowych z AI</p>
+      <p><strong>Koszt:</strong> 1,999 zł/mies (23,988 zł/rok)</p>
+
+      <h3>Rezultaty po roku:</h3>
+      <ul>
+        <li>Wzrost open rate o 45%</li>
+        <li>Zwiększenie przychodów o 320,000 zł</li>
+        <li>Oszczędność 25h/tydzień pracy zespołu</li>
+        <li><strong>ROI: 1,234%</strong></li>
+      </ul>
+
+      <h2>Wnioski</h2>
+      <p>Średni ROI z wdrożeń AI w pierwszym roku to 611%. Kluczowe czynniki sukcesu to właściwy dobór rozwiązania do rzeczywistych potrzeb biznesowych oraz zaangażowanie zespołu we wdrożenie.</p>
+    `
   }
 };
 
 const recentPosts = [
   { id: "automatyzacje-n8n-przewodnik", title: "N8n - kompletny przewodnik po automatyzacji workflow", date: "10 marca 2024" },
-  { id: "roi-z-wdrozen-ai", title: "ROI z wdrożeń AI - case study 3 firm", date: "5 marca 2024" }
+  { id: "roi-z-wdrozen-ai", title: "ROI z wdrożeń AI - case study 3 firm", date: "5 marca 2024" },
+  { id: "agenci-ai-przewodnik", title: "Agenci AI - kompletny przewodnik dla przedsiębiorców", date: "1 marca 2024" }
 ];
 
 const BlogPost = () => {
@@ -83,6 +176,7 @@ const BlogPost = () => {
         title={`${post.title} | Blog Mediafy AI`}
         description={post.content.substring(0, 160)}
         keywords="automatyzacje AI, AI w biznesie, obsługa klienta AI"
+        canonical={`https://mediafy.ai/blog/${id}`}
         schema={schema}
       />
       <div className="min-h-screen bg-background text-foreground">

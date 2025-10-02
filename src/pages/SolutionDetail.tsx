@@ -52,6 +52,94 @@ const solutionsData: Record<string, any> = {
     ],
     price: "Od 1,999 zł/mies",
     tags: ["Marketing", "Email", "Personalizacja"]
+  },
+  "system-rezerwacji-ai": {
+    title: "System Rezerwacji z AI",
+    description: "Inteligentny system zarządzania terminami i rezerwacjami z automatycznymi przypomnieniami i optymalizacją kalendarza.",
+    problem: "Chaos w kalendarzu, pominięte rezerwacje, straty z powodu no-show. Klienci dzwonią w godzinach pracy, a Ty tracisz czas na zarządzanie terminami.",
+    solution: "System AI automatycznie zarządza kalendarzem, wysyła przypomnienia, optymalizuje harmonogram i pozwala klientom rezerwować online 24/7. Redukuje no-show o 80%.",
+    features: [
+      "Rezerwacje online 24/7",
+      "Automatyczne przypomnienia SMS/Email",
+      "Optymalizacja harmonogramu",
+      "Integracja z Google Calendar",
+      "System płatności online",
+      "Analityka i raporty"
+    ],
+    benefits: [
+      "Redukcja no-show o 80%",
+      "Oszczędność 15h/tydzień",
+      "Zwiększenie liczby rezerwacji",
+      "Lepsza organizacja pracy"
+    ],
+    price: "Od 3,499 zł/mies",
+    tags: ["Rezerwacje", "Automatyzacja", "CRM"]
+  },
+  "analiza-koszyka-ai": {
+    title: "Analiza Koszyka i Rekomendacje AI",
+    description: "System AI analizuje zachowania użytkowników w sklepie online i automatycznie rekomenduje produkty zwiększające wartość koszyka.",
+    problem: "Niska wartość średniego koszyka, brak skutecznych rekomendacji produktowych, klienci kupują tylko to, co znaleźli sami.",
+    solution: "AI analizuje historię zakupów, przeglądane produkty i zachowania tysięcy użytkowników, aby rekomendować idealne produkty w odpowiednim momencie.",
+    features: [
+      "Rekomendacje w czasie rzeczywistym",
+      "Cross-sell i up-sell automatyczny",
+      "Personalizacja na podstawie historii",
+      "A/B testing rekomendacji",
+      "Analiza skuteczności",
+      "Integracja z popularnym e-commerce"
+    ],
+    benefits: [
+      "Wzrost wartości koszyka o 35%",
+      "Zwiększenie konwersji o 25%",
+      "Wyższe przychody ze sprzedaży",
+      "Lepsze doświadczenie klienta"
+    ],
+    price: "Od 4,999 zł/mies",
+    tags: ["E-commerce", "Rekomendacje", "Sprzedaż"]
+  },
+  "przetwarzanie-dokumentow": {
+    title: "Przetwarzanie Dokumentów AI (OCR)",
+    description: "Automatyczne wyciąganie i przetwarzanie danych z faktur, umów, CV i innych dokumentów przy użyciu zaawansowanego OCR i AI.",
+    problem: "Ręczne przepisywanie danych z dokumentów zajmuje godziny, prowadzi do błędów i frustruje zespół. Trudność w wyszukiwaniu informacji w archiwach.",
+    solution: "System AI automatycznie rozpoznaje tekst, wyciąga kluczowe informacje, kategoryzuje dokumenty i wprowadza dane do systemów. Wszystko w sekundach zamiast godzin.",
+    features: [
+      "OCR dla 50+ języków",
+      "Wyciąganie danych strukturalnych",
+      "Automatyczna kategoryzacja",
+      "Integracja z systemami ERP/CRM",
+      "Walidacja danych",
+      "Archiwizacja cyfrowa"
+    ],
+    benefits: [
+      "Oszczędność 20h/tydzień",
+      "Redukcja błędów o 95%",
+      "Szybszy dostęp do danych",
+      "Niższe koszty operacyjne"
+    ],
+    price: "Od 2,499 zł/mies",
+    tags: ["OCR", "Dokumenty", "Automatyzacja"]
+  },
+  "rekrutacja-ai": {
+    title: "Agent Rekrutacyjny AI",
+    description: "Automatyczna preselekcja kandydatów, analiza CV, planowanie rozmów i dopasowywanie do stanowisk przy użyciu AI.",
+    problem: "Przejrzenie setek CV zajmuje tygodnie, preselekcja jest subiektywna, najlepsi kandydaci uciekają do konkurencji.",
+    solution: "AI analizuje CV w sekundach, ocenia dopasowanie do wymagań, prowadzi wstępne rozmowy tekstowe i planuje spotkania z najlepszymi kandydatami.",
+    features: [
+      "Automatyczna analiza CV",
+      "Scoring kandydatów",
+      "Chatbot do preselekcji",
+      "Planowanie rozmów",
+      "Integracja z ATS",
+      "Raport z rekomendacjami"
+    ],
+    benefits: [
+      "Skrócenie czasu rekrutacji o 70%",
+      "Lepsze dopasowanie kandydatów",
+      "Oszczędność czasu HR",
+      "Obiektywna ocena"
+    ],
+    price: "Od 3,999 zł/mies",
+    tags: ["HR", "Rekrutacja", "Automatyzacja"]
   }
 };
 
@@ -94,6 +182,7 @@ const SolutionDetail = () => {
         title={`${solution.title} - Gotowe Rozwiązanie AI | Mediafy AI`}
         description={solution.description}
         keywords={`${solution.tags.join(", ")}, automatyzacje AI, AI workflow`}
+        canonical={`https://mediafy.ai/rozwiazania/${id}`}
         schema={schema}
       />
       <div className="min-h-screen bg-background text-foreground">

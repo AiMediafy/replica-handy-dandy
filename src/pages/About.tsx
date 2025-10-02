@@ -32,6 +32,7 @@ const About = () => {
         title="O nas - Eksperci AI i Automatyzacji Biznesowej | Mediafy AI"
         description="Poznaj zespół Mediafy AI - ekspertów od automatyzacji AI, workflow n8n i transformacji cyfrowej firm. Nasza misja to demokratyzacja sztucznej inteligencji."
         keywords="o nas, zespół AI, eksperci automatyzacji, Mediafy AI, transformacja cyfrowa"
+        canonical="https://mediafy.ai/o-nas"
         schema={schema}
       />
       <div className="min-h-screen bg-background text-foreground">

@@ -43,10 +43,46 @@ const blogPosts = [
     date: "1 marca 2024",
     readTime: "10 min",
     image: "blog-4"
+  },
+  {
+    id: "chatboty-ai-vs-tradycyjne",
+    title: "Chatboty AI vs tradycyjna obsługa - co wybrać?",
+    excerpt: "Porównanie kosztów, efektywności i satysfakcji klientów między chatbotami AI a tradycyjną obsługą klienta.",
+    category: "Obsługa klienta",
+    date: "28 lutego 2024",
+    readTime: "7 min",
+    image: "blog-5"
+  },
+  {
+    id: "automatyzacja-email-marketing",
+    title: "Jak zautomatyzować email marketing z AI",
+    excerpt: "Praktyczny poradnik wdrożenia inteligentnej automatyzacji kampanii emailowych z personalizacją na nowym poziomie.",
+    category: "Marketing",
+    date: "25 lutego 2024",
+    readTime: "9 min",
+    image: "blog-6"
+  },
+  {
+    id: "bezpieczenstwo-ai-w-firmie",
+    title: "Bezpieczeństwo danych przy wdrażaniu AI",
+    excerpt: "Wszystko o ochronie danych firmowych podczas wdrażania rozwiązań AI. RODO, szyfrowanie i best practices.",
+    category: "Bezpieczeństwo",
+    date: "20 lutego 2024",
+    readTime: "6 min",
+    image: "blog-7"
+  },
+  {
+    id: "koszty-wdrozenia-ai",
+    title: "Ile kosztuje wdrożenie AI? Kompletny breakdown",
+    excerpt: "Szczegółowa analiza kosztów wdrożenia różnych rozwiązań AI - od chatbotów po zaawansowane systemy analityczne.",
+    category: "Finanse",
+    date: "15 lutego 2024",
+    readTime: "8 min",
+    image: "blog-8"
   }
 ];
 
-const categories = ["Wszystkie", "Obsługa klienta", "Automatyzacja", "Case Studies", "AI", "Marketing"];
+const categories = ["Wszystkie", "Obsługa klienta", "Automatyzacja", "Case Studies", "AI", "Marketing", "Bezpieczeństwo", "Finanse"];
 const recentPosts = blogPosts.slice(0, 3);
 
 const Blog = () => {
@@ -68,6 +104,7 @@ const Blog = () => {
         title="Blog AI - Automatyzacje, Workflow, AI w Biznesie | Mediafy AI"
         description="Praktyczne artykuły o automatyzacjach AI, workflow n8n, agentach AI i transformacji cyfrowej firm. Porady ekspertów i case studies."
         keywords="blog AI, automatyzacje AI, AI w biznesie, workflow n8n, transformacja cyfrowa"
+        canonical="https://mediafy.ai/blog"
         schema={schema}
       />
       <div className="min-h-screen bg-background text-foreground">

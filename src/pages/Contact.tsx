@@ -32,6 +32,7 @@ const Contact = () => {
         title="Kontakt - Umów Demo AI | Mediafy AI"
         description="Skontaktuj się z ekspertami Mediafy AI. Umów bezpłatną konsultację lub demo automatyzacji AI. Email, telefon, formularz kontaktowy."
         keywords="kontakt, demo AI, konsultacja AI, Mediafy AI, umów spotkanie"
+        canonical="https://mediafy.ai/kontakt"
         schema={schema}
       />
       <div className="min-h-screen bg-background text-foreground">
