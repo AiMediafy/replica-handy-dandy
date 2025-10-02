@@ -29,9 +29,9 @@ const Contact = () => {
   return (
     <>
       <SEO
-        title="Kontakt - Umów Demo AI | Mediafy AI"
-        description="Skontaktuj się z ekspertami Mediafy AI. Umów bezpłatną konsultację lub demo automatyzacji AI. Email, telefon, formularz kontaktowy."
-        keywords="kontakt, demo AI, konsultacja AI, Mediafy AI, umów spotkanie"
+        title="Kontakt - Bezpłatne Demo Automatyzacji AI | Workflow n8n - Mediafy"
+        description="Umów demo automatyzacji AI i workflow n8n. Bezpłatna konsultacja eksperta AI. Sprawdź jak AI agents mogą zoptymalizować Twój biznes. Kontakt 24h."
+        keywords="demo ai, konsultacja automatyzacje ai, kontakt workflow n8n, umów demo ai agent, wdrożenie ai w firmie"
         canonical="https://mediafy.ai/kontakt"
         schema={schema}
       />

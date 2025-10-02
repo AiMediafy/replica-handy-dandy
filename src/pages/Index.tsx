@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
+import TrustedBySection from "@/components/TrustedBySection";
 import WhyAISection from "@/components/WhyAISection";
 import ProcessSection from "@/components/ProcessSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -33,15 +34,16 @@ const Index = () => {
   return (
     <>
       <SEO
-        title="Mediafy AI - Automatyzacje AI, Workflow n8n, Agenci AI dla Biznesu"
-        description="Transformujemy biznes dzięki AI. Automatyzacje procesów, workflow n8n, agenci AI i optymalizacje firm. Zwiększ wydajność o 97% z Mediafy AI."
-        keywords="automatyzacje AI, AI workflow, automatyzacje n8n, AI w biznesie, optymalizacje z AI, agenci AI"
+        title="Automatyzacje AI dla Firm | Workflow n8n | Agenci AI - Mediafy"
+        description="Automatyzacje AI dla firm, workflow n8n i agenci AI. Optymalizacja procesów biznesowych za pomocą sztucznej inteligencji. Zwiększ wydajność o 97%. Demo 24h."
+        keywords="automatyzacje ai, ai agent, agent ai, workflow n8n, automatyzacje n8n, ai w biznesie, optymalizacja procesów za pomocą ai, automatyzacje ai dla firm, ai dla biznesu"
         canonical="https://mediafy.ai/"
         schema={schema}
       />
       <div className="min-h-screen bg-background text-foreground">
         <Navigation />
         <HeroSection />
+        <TrustedBySection />
         <WhyAISection />
         <ProcessSection />
         <TestimonialsSection />

@@ -5,33 +5,33 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "./ui/
 const benefits = [
   {
     icon: Zap,
-    title: "Automatyzacja i Optymalizacja",
-    description: "Eliminuj powtarzalne zadania, przyspieszaj procesy i redukuj koszty operacyjne dzięki inteligentnej automatyzacji, która działa 24/7."
+    title: "Automatyzacje AI dla Biznesu",
+    description: "Eliminuj powtarzalne zadania dzięki automatyzacjom AI i workflow n8n. Inteligentne agenty AI pracują 24/7, optymalizując procesy biznesowe i redukując koszty operacyjne o 60%."
   },
   {
     icon: Brain,
-    title: "Lepsze Decyzje Biznesowe",
-    description: "Wykorzystuj zaawansowaną analizę danych opartą na AI, aby podejmować trafniejsze, szybsze i bardziej strategiczne decyzje oparte na faktach, a nie intuicji."
+    title: "Agenci AI do Analizy Danych",
+    description: "Wykorzystaj AI agents do zaawansowanej analizy danych w czasie rzeczywistym. Podejmuj lepsze decyzje biznesowe oparte na predykcjach AI, nie intuicji."
   },
   {
     icon: Rocket,
-    title: "Innowacyjność i Nowe Możliwości",
-    description: "Twórz przełomowe produkty, usługi i modele biznesowe. AI otwiera drzwi do nowych rynków i pozwala wyprzedzić konkurencję."
+    title: "Workflow n8n dla Innowacji",
+    description: "Twórz zaawansowane workflow n8n łączące różne systemy. Automatyzacja procesów w firmach otwiera drzwi do nowych możliwości biznesowych i przewagi konkurencyjnej."
   },
   {
     icon: Target,
-    title: "Personalizacja Doświadczeń",
-    description: "Dostarczaj klientom spersonalizowane oferty i obsługę na niespotykanym dotąd poziomie, budując ich lojalność i maksymalizując satysfakcję."
+    title: "Personalizacja z AI w Biznesie",
+    description: "AI w biznesie to personalizacja obsługi klienta na nowym poziomie. Chatboty AI i agenci automatycznie dostosowują komunikację, zwiększając konwersje o 40%."
   },
   {
     icon: Users,
-    title: "Wydajność Zespołu",
-    description: "Wspieraj swoje zespoły inteligentnymi narzędziami. Odciąż ich od rutyny, pozwalając skupić się na kreatywności, strategii i rozwoju firmy."
+    title: "Optymalizacja Procesów Firmowych",
+    description: "Automatyzacje n8n i agenci AI wspierają zespoły, eliminując rutynowe zadania. Optymalizacja procesów za pomocą AI pozwala skupić się na rozwoju firmy."
   },
   {
     icon: TrendingUp,
-    title: "Przewidywanie Trendów",
-    description: "Analizuj wzorce rynkowe i prognozuj przyszłe tendencje, aby lepiej dostosować swoją strategię i minimalizować ryzyko."
+    title: "AI Agent do Predykcji Trendów",
+    description: "Inteligentne agenci AI analizują wzorce rynkowe i przewidują trendy. Optymalizuj strategię biznesową dzięki predykcyjnej analityce AI."
   }
 ];
 
@@ -41,10 +41,10 @@ const WhyAISection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">
-            Dlaczego AI to Klucz do Przyszłości Twojej Firmy?
+            Dlaczego <span className="text-primary">Automatyzacje AI</span> to Przyszłość Biznesu?
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Odkryj, jak sztuczna inteligencja rewolucjonizuje biznes i dlaczego warto zainwestować w nią już dziś, aby zyskać przewagę konkurencyjną.
+            Sztuczna inteligencja w biznesie to nie przyszłość - to teraźniejszość. Workflow n8n, agenci AI i automatyzacje procesów zwiększają wydajność firm o 97% i redukują koszty.
           </p>
         </div>
 
@@ -67,12 +67,12 @@ const WhyAISection = () => {
         </div>
 
         <div className="text-center">
-          <h3 className="text-2xl font-bold mb-6">Gotowy na Transformację?</h3>
+          <h3 className="text-2xl font-bold mb-6">Wdróż Automatyzacje AI w Swojej Firmie</h3>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Dołącz do grona firm, które już wykorzystują potęgę AI do osiągania lepszych wyników biznesowych.
+            Dołącz do 50+ firm, które już wykorzystują automatyzacje AI, workflow n8n i agentów AI do optymalizacji procesów biznesowych. Zobacz gotowe rozwiązania lub umów demo.
           </p>
           <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-            Rozpocznij swoją transformację
+            Sprawdź automatyzacje AI dla firm
           </Button>
         </div>
       </div>

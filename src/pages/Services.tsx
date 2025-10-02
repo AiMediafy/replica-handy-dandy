@@ -82,9 +82,9 @@ const Services = () => {
   return (
     <>
       <SEO
-        title="Usługi AI - Automatyzacje, Workflow n8n, Agenci AI | Mediafy AI"
-        description="Profesjonalne usługi AI: automatyzacje procesów biznesowych, workflow w n8n, agenci AI i optymalizacje firm. Zwiększ wydajność dzięki sztucznej inteligencji."
-        keywords="automatyzacje AI, workflow n8n, agenci AI, AI w biznesie, optymalizacje z AI, automatyzacje procesów"
+        title="Usługi Automatyzacji AI | Workflow n8n | Optymalizacja Procesów - Mediafy"
+        description="Profesjonalne usługi automatyzacji AI dla firm: workflow n8n, AI agents, optymalizacja procesów biznesowych. Wdrożenia w 14 dni. Sprawdź ofertę."
+        keywords="automatyzacje ai dla firm, workflow n8n, ai agent, agent ai, automatyzacje n8n, optymalizacja procesów za pomocą ai, ai w biznesie, usługi ai"
         canonical="https://mediafy.ai/uslugi"
         schema={schema}
       />

@@ -112,9 +112,9 @@ const Solutions = () => {
   return (
     <>
       <SEO
-        title="Gotowe Rozwiązania AI - Workflow i Agenci do Wdrożenia | Mediafy AI"
-        description="Katalog gotowych rozwiązań AI i workflow n8n. Chatboty, automatyzacje email, systemy rezerwacji i więcej. Szybkie wdrożenie dla Twojej firmy."
-        keywords="gotowe rozwiązania AI, AI workflow, automatyzacje n8n, chatbot AI, automatyzacja biznesu"
+        title="Gotowe Automatyzacje AI dla Firm | Workflow n8n | AI Agents - Mediafy"
+        description="9 gotowych automatyzacji AI i workflow n8n do wdrożenia: chatboty AI, email marketing, OCR dokumentów. Wdrożenie 7-14 dni. Od 1999 zł/mies."
+        keywords="gotowe rozwiązania ai, automatyzacje ai dla firm, workflow n8n, ai agent gotowy, chatbot ai, automatyzacja email marketing ai"
         canonical="https://mediafy.ai/rozwiazania"
         schema={schema}
       />

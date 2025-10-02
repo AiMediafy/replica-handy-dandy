@@ -2,36 +2,44 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./
 
 const faqs = [
   {
-    question: "Czym dokładnie są automatyzacje AI i jak mogą pomóc mojej firmie?",
-    answer: "Automatyzacje AI to inteligentne systemy, które wykorzystują sztuczną inteligencję do wykonywania powtarzalnych zadań bez ludzkiej interwencji. Mogą pomóc Twojej firmie poprzez oszczędność czasu (do 97%), redukcję błędów, pracę 24/7 oraz możliwość skalowania operacji bez proporcjonalnego wzrostu kosztów. Przykłady to automatyczna obsługa klienta, przetwarzanie dokumentów czy analiza danych."
+    question: "Czym są automatyzacje AI dla firm i jak workflow n8n może pomóc w biznesie?",
+    answer: "Automatyzacje AI dla firm to inteligentne systemy wykorzystujące sztuczną inteligencję do wykonywania powtarzalnych zadań bez ludzkiej interwencji. Workflow n8n łączy różne aplikacje i automatyzuje procesy biznesowe. Agenci AI mogą obsługiwać klientów 24/7, przetwarzać dokumenty czy analizować dane. Automatyzacja procesów w firmach za pomocą AI oszczędza czas (do 97%), redukuje błędy i pozwala skalować operacje bez wzrostu kosztów."
   },
   {
-    question: "Ile czasu zajmuje wdrożenie rozwiązań AI w mojej firmie?",
-    answer: "Czas wdrożenia zależy od złożoności projektu. Proste automatyzacje możemy uruchomić w 2-4 tygodnie, bardziej zaawansowane systemy z agentami AI wymagają 6-12 tygodni. Zawsze zaczynamy od darmowej konsultacji i audytu, aby dokładnie określić zakres i harmonogram wdrożenia dostosowany do Twoich potrzeb."
+    question: "Ile kosztuje wdrożenie automatyzacji AI w średniej firmie i jaki jest ROI?",
+    answer: "Gotowe automatyzacje AI dla firm zaczynają się od 1,999 zł/mies (chatbot, workflow n8n dla email marketingu). Dedykowane wdrożenia agentów AI to inwestycja 15,000-50,000 zł jednorazowo. Średni ROI z automatyzacji n8n i agentów AI to 6-12 miesięcy. Nasze case studies pokazują oszczędności 60-90% kosztów operacyjnych. Optymalizacja procesów za pomocą AI szybko się zwraca - klienci oszczędzają średnio 20h/tydzień pracy zespołu."
   },
   {
-    question: "Czy potrzebuję specjalistycznej wiedzy technicznej, aby korzystać z Waszych rozwiązań?",
-    answer: "Nie! Tworzymy rozwiązania typu 'plug & play', które są intuicyjne i łatwe w obsłudze. Zapewniamy kompleksowe szkolenie dla Twojego zespołu oraz dokumentację. Dodatkowo oferujemy stałe wsparcie techniczne, więc zawsze możesz liczyć na pomoc naszych ekspertów."
+    question: "Jak długo trwa wdrożenie workflow n8n i automatyzacji AI w firmie?",
+    answer: "Proste workflow n8n (np. automatyzacja email marketing, integracja CRM) wdrażamy w 2-3 tygodnie. Agenci AI do obsługi klienta to 4-6 tygodni. Zaawansowana optymalizacja procesów w firmach za pomocą AI (pełna automatyzacja działu) wymaga 8-12 tygodni. Zaczynamy od darmowego audytu procesów, identyfikujemy obszary do automatyzacji AI, projektujemy workflow n8n, wdrażamy i szkolimy zespół. AI w biznesie można wdrożyć stopniowo, zaczynając od najbardziej opłacalnych automatyzacji."
   },
   {
-    question: "Jak wygląda proces współpracy i wdrożenia?",
-    answer: "Proces składa się z 5 kroków: (1) Darmowa konsultacja i analiza potrzeb, (2) Audyt procesów i identyfikacja obszarów do automatyzacji, (3) Projektowanie i prototypowanie rozwiązania, (4) Wdrożenie i integracja z istniejącymi systemami, (5) Szkolenie zespołu i przekazanie projektu. Po wdrożeniu zapewniamy ciągłe wsparcie i optymalizację."
+    question: "Czym różni się AI agent od chatbota i workflow n8n?",
+    answer: "Chatbot AI to asystent konwersacyjny do obsługi klienta. AI agent to bardziej autonomiczny - może podejmować decyzje, wykonywać złożone zadania i uczyć się. Workflow n8n to automatyzacja sekwencji działań między aplikacjami. W praktyce: chatbot odpowiada na pytania, agent AI może analizować zgłoszenie i automatycznie je rozwiązać, a workflow n8n łączy systemy (np. CRM + email + baza danych). Najlepsze rezultaty daje połączenie: workflow n8n jako szkielet procesów + agenci AI do inteligentnych decyzji."
   },
   {
-    question: "Czy moje dane są bezpieczne? Jak chronicie informacje firmowe?",
-    answer: "Bezpieczeństwo danych to nasz priorytet. Wszystkie dane są szyfrowane (AES-256), przechowywane w bezpiecznej infrastrukturze zgodnej z RODO. Używamy najnowszych protokołów bezpieczeństwa, regularnie przeprowadzamy audyty i testy penetracyjne. Podpisujemy umowy NDA i zapewniamy pełną zgodność z przepisami o ochronie danych osobowych."
+    question: "Czy automatyzacje n8n i agenci AI mogą zastąpić pracowników w firmie?",
+    answer: "Automatyzacje AI nie zastępują ludzi, ale odciążają ich od rutynowych zadań. AI agents wykonują powtarzalne czynności (przetwarzanie dokumentów, podstawowa obsługa klienta, synchronizacja danych), a ludzie skupiają się na strategii, kreatywności i złożonych problemach. Optymalizacja procesów za pomocą AI i workflow n8n to nie redukcja etatów, ale zwiększenie produktywności zespołu. Firmy wdrażające automatyzacje AI dla biznesu najczęściej realokują zasoby na rozwój, nie zwalniają pracowników."
   },
   {
-    question: "Jaki jest koszt wdrożenia automatyzacji AI?",
-    answer: "Koszty zaczynają się od 1,999 zł/mies za gotowe rozwiązania. Dedykowane wdrożenia są wyceniane indywidualnie po audycie. Średni ROI naszych klientów to 6-12 miesięcy. Oferujemy elastyczne modele rozliczeń - abonamentowe lub jednorazowe. Pamiętaj, że oszczędności z automatyzacji zazwyczaj wielokrotnie przewyższają koszty wdrożenia."
+    question: "Jakie branże najczęściej korzystają z automatyzacji AI i workflow n8n?",
+    answer: "Automatyzacje AI dla firm sprawdzają się w każdej branży. E-commerce wykorzystuje agentów AI do rekomendacji produktów i chatbotów obsługi. Firmy B2B automatyzują workflow n8n dla zarządzania leadami i CRM. Marketing korzysta z AI w email automation i content generation. Produkcja wdraża optymalizację procesów za pomocą AI (OCR dokumentów, predykcja zapasów). Usługi profesjonalne automatyzują rezerwacje i fakturowanie. Workflow n8n i AI agents są uniwersalne - można je dostosować do specyfiki każdego biznesu."
   },
   {
-    question: "Czym różni się n8n od innych narzędzi do automatyzacji?",
-    answer: "N8n to open-source'owa platforma workflow, która oferuje większą elastyczność i kontrolę niż konkurencja (Zapier, Make). Nie ma limitów na liczbę operacji, możesz hostować lokalnie (pełna kontrola nad danymi), masz dostęp do 400+ integracji, możliwość tworzenia własnych węzłów i znacznie niższe koszty przy dużej skali operacji. Idealne dla firm, które chcą pełnej kontroli nad automatyzacjami."
+    question: "Jak workflow n8n integruje się z istniejącymi systemami w firmie?",
+    answer: "N8n to platforma workflow z 400+ gotowymi integracjami (Slack, Google Workspace, Salesforce, HubSpot, WooCommerce, WordPress, SQL, API REST). Automatyzacje n8n łączą Twoje systemy bez pisania kodu. Możesz też stworzyć własne integracje. AI agents mogą działać w ramach workflow n8n, automatyzując decyzje. Przykład: workflow n8n odbiera zamówienie (WooCommerce) → AI agent klasyfikuje priorytet → wysyła powiadomienie (Slack) → aktualizuje CRM → generuje fakturę. Optymalizacja procesów w firmach za pomocą workflow n8n jest możliwa nawet z przestarzałymi systemami (integracja przez API/webhook)."
   },
   {
-    question: "Czy mogę przetestować Wasze rozwiązania przed zakupem?",
-    answer: "Tak! Oferujemy 30-dniowy okres testowy dla większości rozwiązań. Dodatkowo możesz umówić się na darmowe demo, podczas którego pokażemy działanie systemu na żywym przykładzie. Dla niektórych rozwiązań przygotowujemy również proof-of-concept (POC) na Twoich rzeczywistych danych, abyś mógł zobaczyć konkretne rezultaty przed podjęciem decyzji."
+    question: "Czy mogę przetestować automatyzacje AI i workflow n8n przed wdrożeniem?",
+    answer: "Tak! Oferujemy bezpłatne demo automatyzacji AI dla Twojej firmy. Pokażemy działanie workflow n8n i agentów AI na żywych przykładach z Twojej branży. Możemy też przygotować proof-of-concept (POC) - prototyp automatyzacji na Twoich rzeczywistych danych, abyś zobaczył konkretne rezultaty optymalizacji procesów za pomocą AI. Gotowe rozwiązania (chatboty AI, workflow n8n dla email marketingu) oferujemy z 30-dniowym okresem testowym. Większość klientów widzi efekty automatyzacji n8n już w pierwszym tygodniu testu."
+  },
+  {
+    question: "Bezpieczeństwo danych przy automatyzacji AI - jak chronicie informacje firmowe?",
+    answer: "Bezpieczeństwo automatyzacji AI to nasz priorytet. Workflow n8n możemy hostować lokalnie (pełna kontrola nad danymi) lub w bezpiecznej chmurze zgodnej z RODO. Wszystkie dane w systemach AI są szyfrowane (AES-256). Agenci AI działają zgodnie z polityką bezpieczeństwa Twojej firmy. Regularnie audytujemy automatyzacje n8n pod kątem zabezpieczeń. Podpisujemy NDA przed wdrożeniem. AI w biznesie to nie ryzyko - to bezpieczna optymalizacja procesów przy zachowaniu najwyższych standardów ochrony danych."
+  },
+  {
+    question: "Jakie wsparcie otrzymam po wdrożeniu automatyzacji AI i workflow n8n?",
+    answer: "Po wdrożeniu automatyzacji AI dla firm zapewniamy: (1) Wsparcie techniczne 24/7 dla krytycznych workflow n8n i agentów AI, (2) Regularne przeglądy i optymalizację procesów, (3) Monitoring wydajności automatyzacji n8n, (4) Aktualizacje AI agents i nowe funkcje, (5) Szkolenia zespołu z obsługi workflow, (6) Pomoc w rozbudowie automatyzacji o nowe obszary. Optymalizacja procesów za pomocą AI to proces ciągły - doradzamy, jak maksymalizować ROI i stopniowo automatyzować kolejne obszary biznesu. Średni czas reakcji na zgłoszenie: poniżej 2h."
   }
 ];
 

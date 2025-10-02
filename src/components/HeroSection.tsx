@@ -13,23 +13,21 @@ const HeroSection = () => {
             </div>
 
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-              Transformujemy{" "}
-              <span className="text-primary">Biznes</span>
-              <br />
-              Dzięki AI
+              Automatyzacje AI{" "}
+              <span className="text-primary">dla Firm</span>
             </h1>
 
             <p className="text-lg text-muted-foreground">
-              Optymalizuj procesy, twórz innowacyjne rozwiązania i zwiększaj wydajność firmy dzięki AI.
+              Workflow n8n, agenci AI i optymalizacja procesów biznesowych. Zwiększ wydajność firmy dzięki inteligentnej automatyzacji AI.
             </p>
 
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20">
                 <Sparkles className="w-4 h-4 mr-2" />
-                Rozpocznij transformację z AI
+                Zobacz automatyzacje AI
               </Button>
               <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
-                Dowiedz się więcej
+                Sprawdź nasze workflow n8n
               </Button>
             </div>
           </div>

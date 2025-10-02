@@ -101,9 +101,9 @@ const Blog = () => {
   return (
     <>
       <SEO
-        title="Blog AI - Automatyzacje, Workflow, AI w Biznesie | Mediafy AI"
-        description="Praktyczne artykuły o automatyzacjach AI, workflow n8n, agentach AI i transformacji cyfrowej firm. Porady ekspertów i case studies."
-        keywords="blog AI, automatyzacje AI, AI w biznesie, workflow n8n, transformacja cyfrowa"
+        title="Blog Automatyzacje AI | Workflow n8n | AI w Biznesie - Mediafy"
+        description="Praktyczne poradniki o automatyzacjach AI dla firm, workflow n8n, AI agents. Case studies ROI, przewodniki wdrożeń. Porady ekspertów AI."
+        keywords="blog automatyzacje ai, jak wdrożyć ai, workflow n8n tutorial, ai agent przewodnik, ai w biznesie case study, automatyzacje n8n"
         canonical="https://mediafy.ai/blog"
         schema={schema}
       />

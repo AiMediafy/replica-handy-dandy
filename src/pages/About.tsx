@@ -29,9 +29,9 @@ const About = () => {
   return (
     <>
       <SEO
-        title="O nas - Eksperci AI i Automatyzacji Biznesowej | Mediafy AI"
-        description="Poznaj zespół Mediafy AI - ekspertów od automatyzacji AI, workflow n8n i transformacji cyfrowej firm. Nasza misja to demokratyzacja sztucznej inteligencji."
-        keywords="o nas, zespół AI, eksperci automatyzacji, Mediafy AI, transformacja cyfrowa"
+        title="O Nas - Eksperci Automatyzacji AI i Workflow n8n | Zespół Mediafy"
+        description="Zespół ekspertów automatyzacji AI, workflow n8n i AI agents. 50+ wdrożeń, ROI 600%. Specjalizacja: automatyzacje procesów w firmach, AI w biznesie."
+        keywords="o nas mediafy ai, eksperci automatyzacje ai, specjaliści workflow n8n, zespół ai agents, wdrożenia ai w polsce"
         canonical="https://mediafy.ai/o-nas"
         schema={schema}
       />
@@ -63,6 +63,40 @@ const About = () => {
                     Nasza specjalizacja to nie tylko wdrażanie gotowych rozwiązań, ale przede wszystkim edukacja. Wierzymy, że każdy 
                     przedsiębiorca powinien rozumieć, jak AI może pomóc jego firmie, dlatego stawiamy na transparentność i partnerskie podejście.
                   </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="mb-16">
+              <h2 className="text-3xl font-bold mb-8 text-center">Nasza specjalizacja</h2>
+              <Card className="bg-secondary/30 border-primary/30">
+                <CardContent className="pt-6">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h3 className="text-xl font-bold mb-3 text-primary">Automatyzacje AI dla Firm</h3>
+                      <p className="text-muted-foreground mb-4">
+                        Wdrażamy kompleksowe automatyzacje AI dostosowane do procesów biznesowych. Od chatbotów obsługi klienta po zaawansowane systemy analityczne - optymalizujemy każdy obszar firmy za pomocą sztucznej inteligencji.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold mb-3 text-primary">Workflow n8n</h3>
+                      <p className="text-muted-foreground mb-4">
+                        Projektujemy i wdrażamy zaawansowane workflow n8n łączące wszystkie systemy w firmie. Automatyzacja procesów między aplikacjami, integracje CRM, synchronizacja danych - wszystko bez pisania kodu.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold mb-3 text-primary">AI Agents (Agenci AI)</h3>
+                      <p className="text-muted-foreground mb-4">
+                        Tworzymy inteligentnych agentów AI, którzy samodzielnie wykonują zadania, podejmują decyzje i uczą się. AI agents do sprzedaży, marketingu, obsługi klienta i analityki biznesowej.
+                      </p>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold mb-3 text-primary">Optymalizacja Procesów za pomocą AI</h3>
+                      <p className="text-muted-foreground mb-4">
+                        Przeprowadzamy audyty procesów w firmach i identyfikujemy obszary do automatyzacji. Optymalizacja workflow, eliminacja wąskich gardeł, zwiększenie efektywności zespołów - mierzymy ROI każdego wdrożenia.
+                      </p>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </div>
