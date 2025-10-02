@@ -1,14 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://mediafy.ai/sitemap.xml
+
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: *
 Allow: /
