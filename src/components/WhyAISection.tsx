@@ -71,7 +71,11 @@ const WhyAISection = () => {
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
             Dołącz do 50+ firm, które już wykorzystują automatyzacje AI, workflow n8n i agentów AI do optymalizacji procesów biznesowych. Zobacz gotowe rozwiązania lub umów demo.
           </p>
-          <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+          <Button 
+            size="lg" 
+            onClick={() => document.getElementById('rozwiazania')?.scrollIntoView({ behavior: 'smooth' })}
+            className="bg-primary text-primary-foreground hover:bg-primary/90"
+          >
             Sprawdź automatyzacje AI dla firm
           </Button>
         </div>

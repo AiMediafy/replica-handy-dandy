@@ -117,7 +117,10 @@ const SolutionsSection = () => {
                 </ul>
                 <div className="pt-4 border-t border-border">
                   <div className="text-2xl font-bold text-primary mb-3">{solution.price}</div>
-                  <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+                  <Button 
+                    onClick={() => document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' })}
+                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                  >
                     Dowiedz się więcej
                   </Button>
                 </div>
@@ -131,7 +134,12 @@ const SolutionsSection = () => {
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
             Tworzymy dedykowane rozwiązania AI dopasowane do specyficznych potrzeb Twojej firmy
           </p>
-          <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
+          <Button 
+            size="lg" 
+            variant="outline" 
+            onClick={() => document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' })}
+            className="border-primary text-primary hover:bg-primary/10"
+          >
             Zamów rozwiązanie na miarę
           </Button>
         </div>

@@ -108,10 +108,19 @@ const ProcessSection = () => {
             Umów się na bezpłatną konsultację i dowiedz się, jak AI może zmienić Twój biznes
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button 
+              size="lg" 
+              onClick={() => document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-primary text-primary-foreground hover:bg-primary/90"
+            >
               Umów bezpłatną konsultację
             </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              onClick={() => document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' })}
+              className="border-primary text-primary hover:bg-primary/10"
+            >
               Skontaktuj się z nami
             </Button>
           </div>
