@@ -6,6 +6,14 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import blogAiCustomerService from "@/assets/blog-ai-customer-service.jpg";
+import blogN8nAutomation from "@/assets/blog-n8n-automation.jpg";
+import blogRoiAi from "@/assets/blog-roi-ai.jpg";
+import blogAiAgents from "@/assets/blog-ai-agents.jpg";
+import blogChatbotComparison from "@/assets/blog-chatbot-comparison.jpg";
+import blogEmailAutomation from "@/assets/blog-email-automation.jpg";
+import blogAiSecurity from "@/assets/blog-ai-security.jpg";
+import blogAiCosts from "@/assets/blog-ai-costs.jpg";
 
 const blogPosts = [
   {
@@ -15,7 +23,7 @@ const blogPosts = [
     category: "Obsługa klienta",
     date: "15 marca 2024",
     readTime: "5 min",
-    image: "blog-1"
+    image: blogAiCustomerService
   },
   {
     id: "automatyzacje-n8n-przewodnik",
@@ -24,7 +32,7 @@ const blogPosts = [
     category: "Automatyzacja",
     date: "10 marca 2024",
     readTime: "8 min",
-    image: "blog-2"
+    image: blogN8nAutomation
   },
   {
     id: "roi-z-wdrozen-ai",
@@ -33,7 +41,7 @@ const blogPosts = [
     category: "Case Studies",
     date: "5 marca 2024",
     readTime: "6 min",
-    image: "blog-3"
+    image: blogRoiAi
   },
   {
     id: "agenci-ai-przewodnik",
@@ -42,7 +50,7 @@ const blogPosts = [
     category: "AI",
     date: "1 marca 2024",
     readTime: "10 min",
-    image: "blog-4"
+    image: blogAiAgents
   },
   {
     id: "chatboty-ai-vs-tradycyjne",
@@ -51,7 +59,7 @@ const blogPosts = [
     category: "Obsługa klienta",
     date: "28 lutego 2024",
     readTime: "7 min",
-    image: "blog-5"
+    image: blogChatbotComparison
   },
   {
     id: "automatyzacja-email-marketing",
@@ -60,7 +68,7 @@ const blogPosts = [
     category: "Marketing",
     date: "25 lutego 2024",
     readTime: "9 min",
-    image: "blog-6"
+    image: blogEmailAutomation
   },
   {
     id: "bezpieczenstwo-ai-w-firmie",
@@ -69,7 +77,7 @@ const blogPosts = [
     category: "Bezpieczeństwo",
     date: "20 lutego 2024",
     readTime: "6 min",
-    image: "blog-7"
+    image: blogAiSecurity
   },
   {
     id: "koszty-wdrozenia-ai",
@@ -78,7 +86,7 @@ const blogPosts = [
     category: "Finanse",
     date: "15 lutego 2024",
     readTime: "8 min",
-    image: "blog-8"
+    image: blogAiCosts
   }
 ];
 
@@ -126,8 +134,14 @@ const Blog = () => {
               <div className="lg:col-span-3">
                 <div className="grid md:grid-cols-2 gap-6">
                   {blogPosts.map((post) => (
-                    <Card key={post.id} className="bg-card border-border hover:border-primary/50 transition-all duration-300 flex flex-col">
-                      <div className="h-48 bg-secondary/50 rounded-t-lg"></div>
+                    <Card key={post.id} className="bg-card border-border hover:border-primary/50 transition-all duration-300 flex flex-col overflow-hidden">
+                      <div className="h-48 overflow-hidden">
+                        <img 
+                          src={post.image} 
+                          alt={post.title}
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                        />
+                      </div>
                       <CardHeader>
                         <div className="flex items-center gap-3 mb-3">
                           <Badge variant="secondary">{post.category}</Badge>
