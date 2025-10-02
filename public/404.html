@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mediafy AI</title>
+  <script>
+    // GitHub Pages SPA redirect trick
+    // This script takes the current pathname and redirects to index.html
+    // with the pathname stored in sessionStorage for React Router to pick up
+    sessionStorage.setItem('redirect', location.pathname + location.search + location.hash);
+    location.replace(location.origin + location.pathname.split('/').slice(0, -1).join('/') + '/');
+  </script>
+</head>
+<body>
+  <!-- This page is for GitHub Pages SPA routing -->
+</body>
+</html>
