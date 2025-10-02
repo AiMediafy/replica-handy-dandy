@@ -105,10 +105,14 @@ const Services = () => {
 
             <div className="grid md:grid-cols-2 gap-8 mb-16">
               {services.map((service, index) => (
-                <Card key={index} className="bg-card border-border hover:border-primary/50 transition-all duration-300">
+                <Card 
+                  key={index} 
+                  className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:scale-105 animate-fade-in"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
                   <CardHeader>
                     <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                      <service.icon className="w-8 h-8 text-primary" />
+                      <service.icon className="w-8 h-8 text-primary" aria-hidden="true" />
                     </div>
                     <CardTitle className="text-2xl mb-2">{service.title}</CardTitle>
                     <CardDescription className="text-base text-muted-foreground">
@@ -127,7 +131,10 @@ const Services = () => {
                         ))}
                       </ul>
                     </div>
-                    <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+                    <Button 
+                      onClick={() => document.getElementById('kontakt')?.scrollIntoView({ behavior: 'smooth' })}
+                      className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                    >
                       Umów konsultację
                     </Button>
                   </CardContent>

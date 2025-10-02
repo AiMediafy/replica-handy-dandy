@@ -47,14 +47,18 @@ const TestimonialsSection = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10">
+            <Card 
+              key={index} 
+              className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 hover:scale-105 animate-fade-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
               <CardContent className="pt-6">
-                <Quote className="w-10 h-10 text-primary/20 mb-4" />
+                <Quote className="w-10 h-10 text-primary/20 mb-4" aria-hidden="true" />
                 <p className="text-muted-foreground mb-6 italic">
                   "{testimonial.quote}"
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center" role="img" aria-label={`Avatar ${testimonial.author}`}>
                     <span className="text-primary font-bold">{testimonial.avatar}</span>
                   </div>
                   <div>
@@ -69,7 +73,7 @@ const TestimonialsSection = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
-            <div key={index} className="text-center">
+            <div key={index} className="text-center animate-fade-in" style={{ animationDelay: `${index * 0.15}s` }}>
               <div className="text-5xl font-bold text-primary mb-2">{stat.value}</div>
               <div className="text-muted-foreground">{stat.label}</div>
             </div>

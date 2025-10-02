@@ -49,10 +49,14 @@ const TrustedBySection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {industries.map((industry, index) => (
-            <Card key={index} className="bg-card border-border hover:border-primary/50 transition-all duration-300">
+            <Card 
+              key={index} 
+              className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:scale-105 animate-fade-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
               <CardContent className="pt-6">
                 <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <industry.icon className="w-7 h-7 text-primary" />
+                  <industry.icon className="w-7 h-7 text-primary" aria-hidden="true" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{industry.title}</h3>
                 <p className="text-muted-foreground text-sm">{industry.description}</p>

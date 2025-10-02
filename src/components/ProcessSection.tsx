@@ -72,13 +72,17 @@ const ProcessSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {steps.map((step, index) => (
-            <Card key={index} className="bg-card border-border relative overflow-hidden group hover:border-primary/50 transition-all duration-300">
+            <Card 
+              key={index} 
+              className="bg-card border-border relative overflow-hidden group hover:border-primary/50 transition-all duration-300 hover:scale-105 animate-fade-in"
+              style={{ animationDelay: `${index * 0.15}s` }}
+            >
               <div className="absolute top-4 right-4 text-6xl font-bold text-primary/5 group-hover:text-primary/10 transition-colors">
                 {step.number}
               </div>
               <CardHeader>
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <step.icon className="w-6 h-6 text-primary" />
+                  <step.icon className="w-6 h-6 text-primary" aria-hidden="true" />
                 </div>
                 <div className="flex items-center gap-3 mb-2">
                   <span className="text-primary font-bold text-xl">{step.number}</span>

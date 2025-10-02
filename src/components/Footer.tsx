@@ -20,36 +20,41 @@ const Footer = () => {
           <div>
             <h4 className="font-bold mb-4">Firma</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#o-nas" className="text-muted-foreground hover:text-primary transition-colors">O nas</a></li>
-              <li><a href="#blog" className="text-muted-foreground hover:text-primary transition-colors">Blog</a></li>
-              <li><a href="#kariera" className="text-muted-foreground hover:text-primary transition-colors">Kariera</a></li>
-              <li><a href="#kontakt" className="text-muted-foreground hover:text-primary transition-colors">Kontakt</a></li>
+              <li><a href="/o-nas" className="text-muted-foreground hover:text-primary transition-colors">O nas</a></li>
+              <li><a href="/blog" className="text-muted-foreground hover:text-primary transition-colors">Blog AI</a></li>
+              <li><a href="/uslugi" className="text-muted-foreground hover:text-primary transition-colors">Nasze usługi</a></li>
+              <li><a href="/kontakt" className="text-muted-foreground hover:text-primary transition-colors">Kontakt</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-bold mb-4">Rozwiązania</h4>
+            <h4 className="font-bold mb-4">Automatyzacje AI</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#rozwiazania" className="text-muted-foreground hover:text-primary transition-colors">Chatboty AI</a></li>
-              <li><a href="#rozwiazania" className="text-muted-foreground hover:text-primary transition-colors">Analiza danych</a></li>
-              <li><a href="#rozwiazania" className="text-muted-foreground hover:text-primary transition-colors">Automatyzacja</a></li>
-              <li><a href="#rozwiazania" className="text-muted-foreground hover:text-primary transition-colors">Personalizacja</a></li>
+              <li><a href="/rozwiazania" className="text-muted-foreground hover:text-primary transition-colors">Chatboty AI dla firm</a></li>
+              <li><a href="/rozwiazania" className="text-muted-foreground hover:text-primary transition-colors">Workflow n8n</a></li>
+              <li><a href="/rozwiazania" className="text-muted-foreground hover:text-primary transition-colors">Agenci AI</a></li>
+              <li><a href="/rozwiazania" className="text-muted-foreground hover:text-primary transition-colors">Optymalizacja procesów AI</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-bold mb-4">Zasoby</h4>
+            <h4 className="font-bold mb-4">Popularne Rozwiązania</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Dokumentacja</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Case studies</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Webinary</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Wsparcie</a></li>
+              <li><a href="/rozwiazania/automatyzacje-ai-ecommerce" className="text-muted-foreground hover:text-primary transition-colors">Automatyzacje AI e-commerce</a></li>
+              <li><a href="/rozwiazania/workflow-n8n-crm" className="text-muted-foreground hover:text-primary transition-colors">Workflow n8n CRM</a></li>
+              <li><a href="/blog/jak-wdrozyc-ai" className="text-muted-foreground hover:text-primary transition-colors">Jak wdrożyć AI w firmie</a></li>
+              <li><a href="/#kontakt" className="text-muted-foreground hover:text-primary transition-colors">Bezpłatna konsultacja AI</a></li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 Mediafy AI. Wszelkie prawa zastrzeżone.</p>
+        <div className="border-t border-border pt-8">
+          <div className="text-center text-sm text-muted-foreground mb-4">
+            <p className="mb-2">
+              <strong>Mediafy AI</strong> - Automatyzacje AI dla firm | Workflow n8n | Agenci AI | Optymalizacja procesów biznesowych
+            </p>
+            <p>&copy; {new Date().getFullYear()} Mediafy AI. Wszelkie prawa zastrzeżone.</p>
+          </div>
         </div>
       </div>
     </footer>

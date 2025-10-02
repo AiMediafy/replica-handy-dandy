@@ -106,9 +106,9 @@ const About = () => {
               <div className="grid md:grid-cols-3 gap-6">
                 <Card className="bg-card border-border text-center">
                   <CardContent className="pt-6">
-                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Target className="w-8 h-8 text-primary" />
-                    </div>
+                  <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <Target className="w-8 h-8 text-primary" aria-hidden="true" />
+                  </div>
                     <h3 className="text-xl font-bold mb-3">Misja</h3>
                     <p className="text-muted-foreground">
                       Demokratyzujemy dostęp do AI, umożliwiając każdej firmie korzystanie z najnowszych technologii
@@ -118,9 +118,9 @@ const About = () => {
 
                 <Card className="bg-card border-border text-center">
                   <CardContent className="pt-6">
-                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Heart className="w-8 h-8 text-primary" />
-                    </div>
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Heart className="w-8 h-8 text-primary" aria-hidden="true" />
+                  </div>
                     <h3 className="text-xl font-bold mb-3">Wartości</h3>
                     <p className="text-muted-foreground">
                       Transparentność, partnerstwo i edukacja to fundamenty naszej współpracy z klientami
@@ -130,9 +130,9 @@ const About = () => {
 
                 <Card className="bg-card border-border text-center">
                   <CardContent className="pt-6">
-                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Zap className="w-8 h-8 text-primary" />
-                    </div>
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Zap className="w-8 h-8 text-primary" aria-hidden="true" />
+                  </div>
                     <h3 className="text-xl font-bold mb-3">Wizja</h3>
                     <p className="text-muted-foreground">
                       Przyszłość, w której AI wspiera każdą polską firmę w osiąganiu jej pełnego potencjału
@@ -146,9 +146,13 @@ const About = () => {
               <h2 className="text-3xl font-bold mb-8 text-center">Nasz zespół</h2>
               <div className="grid md:grid-cols-4 gap-6">
                 {team.map((member, index) => (
-                  <Card key={index} className="bg-card border-border text-center">
+                  <Card 
+                    key={index} 
+                    className="bg-card border-border text-center animate-fade-in"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
                     <CardContent className="pt-6">
-                      <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4" role="img" aria-label={`Avatar ${member.name}`}>
                         <span className="text-2xl font-bold text-primary">{member.initials}</span>
                       </div>
                       <h3 className="font-bold mb-1">{member.name}</h3>

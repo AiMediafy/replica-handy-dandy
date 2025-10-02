@@ -116,10 +116,10 @@ const Contact = () => {
                   </CardHeader>
                   <CardContent className="space-y-6">
                     <div>
-                      <h4 className="font-bold mb-2 flex items-center gap-2">
-                        <Mail className="w-5 h-5 text-primary" />
-                        Email
-                      </h4>
+                  <h4 className="font-bold mb-2 flex items-center gap-2">
+                    <Mail className="w-5 h-5 text-primary" aria-hidden="true" />
+                    Email
+                  </h4>
                       <a href="mailto:kontakt@mediafy.ai" className="text-primary hover:underline">
                         kontakt@mediafy.ai
                       </a>
@@ -127,10 +127,10 @@ const Contact = () => {
                     </div>
 
                     <div>
-                      <h4 className="font-bold mb-2 flex items-center gap-2">
-                        <Phone className="w-5 h-5 text-primary" />
-                        Telefon
-                      </h4>
+                  <h4 className="font-bold mb-2 flex items-center gap-2">
+                    <Phone className="w-5 h-5 text-primary" aria-hidden="true" />
+                    Telefon
+                  </h4>
                       <a href="tel:+48123456789" className="text-primary hover:underline">
                         +48 123 456 789
                       </a>
@@ -138,19 +138,19 @@ const Contact = () => {
                     </div>
 
                     <div>
-                      <h4 className="font-bold mb-2 flex items-center gap-2">
-                        <MapPin className="w-5 h-5 text-primary" />
-                        Adres
-                      </h4>
+                  <h4 className="font-bold mb-2 flex items-center gap-2">
+                    <MapPin className="w-5 h-5 text-primary" aria-hidden="true" />
+                    Adres
+                  </h4>
                       <p>Warszawa, Polska</p>
                       <p className="text-sm text-muted-foreground mt-1">Spotkania online i stacjonarne</p>
                     </div>
 
                     <div>
-                      <h4 className="font-bold mb-2 flex items-center gap-2">
-                        <Clock className="w-5 h-5 text-primary" />
-                        Godziny pracy
-                      </h4>
+                  <h4 className="font-bold mb-2 flex items-center gap-2">
+                    <Clock className="w-5 h-5 text-primary" aria-hidden="true" />
+                    Godziny pracy
+                  </h4>
                       <p>Poniedziałek - Piątek</p>
                       <p className="text-primary">9:00 - 17:00</p>
                     </div>
@@ -159,10 +159,10 @@ const Contact = () => {
 
                 <Card className="bg-secondary/30 border-primary/30">
                   <CardContent className="pt-6">
-                    <div className="flex items-center gap-3 mb-4">
-                      <Video className="w-6 h-6 text-primary" />
-                      <h4 className="font-bold text-lg">Umów demo AI</h4>
-                    </div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <Video className="w-6 h-6 text-primary" aria-hidden="true" />
+                    <h4 className="font-bold text-lg">Umów demo AI</h4>
+                  </div>
                     <p className="text-sm text-muted-foreground mb-4">
                       Zobacz na żywo, jak nasze rozwiązania AI mogą usprawnić Twój biznes. 
                       Bezpłatna 30-minutowa prezentacja dostosowana do Twojej branży.

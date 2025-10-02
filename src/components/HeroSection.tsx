@@ -68,19 +68,19 @@ const HeroSection = () => {
         </div>
 
         <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div className="text-center">
+          <div className="text-center animate-fade-in" style={{ animationDelay: '0.1s' }}>
             <div className="text-4xl md:text-5xl font-bold text-primary mb-2">97%</div>
             <div className="text-muted-foreground">Wzrost wydajności</div>
           </div>
-          <div className="text-center">
+          <div className="text-center animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div className="text-4xl md:text-5xl font-bold text-primary mb-2">24/7</div>
             <div className="text-muted-foreground">Automatyzacja</div>
           </div>
-          <div className="text-center">
+          <div className="text-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <div className="text-4xl md:text-5xl font-bold text-primary mb-2">50+</div>
             <div className="text-muted-foreground">Zadowolonych firm</div>
           </div>
-          <div className="text-center">
+          <div className="text-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <div className="text-4xl md:text-5xl font-bold text-primary mb-2">∞</div>
             <div className="text-muted-foreground">Przewaga konkurencyjna</div>
           </div>
