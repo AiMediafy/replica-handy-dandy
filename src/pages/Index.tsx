@@ -6,7 +6,6 @@ import ROICalculator from "@/components/ROICalculator";
 import CaseStudies from "@/components/CaseStudies";
 import ProcessSection from "@/components/ProcessSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import PricingTiers from "@/components/PricingTiers";
 import RiskReversal from "@/components/RiskReversal";
 import FAQSection from "@/components/FAQSection";
 import MultiStepContactForm from "@/components/MultiStepContactForm";
@@ -77,7 +76,6 @@ const Index = () => {
         <CaseStudies />
         <ProcessSection />
         <TestimonialsSection />
-        <PricingTiers />
         <RiskReversal />
         <MultiStepContactForm />
         <FAQSection />
