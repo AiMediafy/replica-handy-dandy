@@ -126,21 +126,21 @@ const Solutions = () => {
             
             <div className="mb-16 text-center space-y-4">
               <h1 className="text-5xl md:text-6xl font-bold">
-                Gotowe <span className="text-primary">Rozwiązania AI</span>
+                Automatyzacje AI <span className="text-primary">dla Twojej Firmy</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Sprawdzone workflow i agenci AI gotowe do wdrożenia w Twojej firmie. Zacznij automatyzować już dziś.
+                Gotowe pakiety lub pojedyncze rozwiązania - wszystko wdrożone w 7-14 dni
               </p>
             </div>
 
             {/* Pricing Packages Section */}
             <div className="mb-20">
               <div className="text-center mb-12 space-y-4">
-                <h2 className="text-4xl md:text-5xl font-bold">
-                  Wybierz Pakiet dla Swojej Firmy
+                <h2 className="text-3xl md:text-4xl font-bold">
+                  Nasze Pakiety
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Transparentne ceny bez ukrytych kosztów. Płacisz za rezultaty, nie za czas.
+                  Kompleksowe rozwiązania dostosowane do wielkości Twojej firmy
                 </p>
               </div>
 
@@ -315,11 +315,11 @@ const Solutions = () => {
             {/* Individual Solutions Section */}
             <div className="mb-12">
               <div className="text-center mb-12 space-y-4">
-                <h2 className="text-4xl md:text-5xl font-bold">
-                  Lub Wybierz <span className="text-primary">Pojedyncze Rozwiązanie</span>
+                <h2 className="text-3xl md:text-4xl font-bold">
+                  Pojedyncze <span className="text-primary">Automatyzacje</span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                  Potrzebujesz tylko konkretnego narzędzia? Wybierz z naszej biblioteki gotowych automatyzacji.
+                  Wybierz konkretne narzędzie AI z naszej biblioteki gotowych rozwiązań
                 </p>
               </div>
 
