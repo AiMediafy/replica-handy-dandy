@@ -31,7 +31,7 @@ const RiskReversal = () => {
   };
 
   return (
-    <section className="py-16 px-4 bg-secondary/30">
+    <section className="py-16 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">

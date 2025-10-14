@@ -72,7 +72,7 @@ const ROICalculator = () => {
   const results = industry && size ? roiData[industry][size] : null;
 
   return (
-    <section id="roi-calculator" className="py-20 px-4 bg-gradient-to-b from-primary/5 to-transparent">
+    <section id="roi-calculator" className="py-20 px-4">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-12 space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">
