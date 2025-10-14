@@ -2,8 +2,12 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./
 
 const faqs = [
   {
-    question: "Czym są automatyzacje AI dla firm i jak workflow n8n może pomóc w biznesie?",
-    answer: "Automatyzacje AI dla firm to inteligentne systemy wykorzystujące sztuczną inteligencję do wykonywania powtarzalnych zadań bez ludzkiej interwencji. Workflow n8n łączy różne aplikacje i automatyzuje procesy biznesowe. Agenci AI mogą obsługiwać klientów 24/7, przetwarzać dokumenty czy analizować dane. Automatyzacja procesów w firmach za pomocą AI oszczędza czas (do 97%), redukuje błędy i pozwala skalować operacje bez wzrostu kosztów."
+    question: "Ile kosztuje wstępny audyt procesów i automatyzacji?",
+    answer: "Wstępny audyt jest całkowicie darmowy (wartość 2,999 zł). Analizujemy Twoje procesy, identyfikujemy obszary do automatyzacji AI i pokazujemy szacowany ROI. Zero zobowiązań. Podczas discovery call dokładnie przeanalizujemy Twoje wyzwania biznesowe i zaproponujemy konkretne rozwiązania. To bezpłatna 30-minutowa konsultacja z ekspertem AI, która pomoże Ci zrozumieć, jak AI może zrewolucjonizować Twoją firmę."
+  },
+  {
+    question: "Jak szybko zobaczę pierwsze rezultaty z wdrożenia AI?",
+    answer: "Pierwsze automatyzacje działają już po 2-3 tygodniach od rozpoczęcia wdrożenia. Proste workflow n8n (np. automatyzacja email marketing) możemy uruchomić w ciągu tygodnia. Kompleksowe rozwiązania z agentami AI potrzebują 4-6 tygodni. Pełny ROI z automatyzacji AI widzisz średnio po 4-6 miesiącach. Zaczynamy od quick wins - najprostszych automatyzacji, które dają natychmiastowe rezultaty, a potem stopniowo rozbudowujemy system."
   },
   {
     question: "Ile kosztuje wdrożenie automatyzacji AI w średniej firmie i jaki jest ROI?",

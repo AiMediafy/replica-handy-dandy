@@ -2,13 +2,18 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import TrustedBySection from "@/components/TrustedBySection";
 import WhyAISection from "@/components/WhyAISection";
+import ROICalculator from "@/components/ROICalculator";
+import CaseStudies from "@/components/CaseStudies";
 import ProcessSection from "@/components/ProcessSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import SolutionsSection from "@/components/SolutionsSection";
+import PricingTiers from "@/components/PricingTiers";
+import RiskReversal from "@/components/RiskReversal";
+import FAQSection from "@/components/FAQSection";
+import MultiStepContactForm from "@/components/MultiStepContactForm";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
-import FAQSection from "@/components/FAQSection";
+import ExitIntentPopup from "@/components/ExitIntentPopup";
 
 const Index = () => {
   const schema = {
@@ -68,13 +73,18 @@ const Index = () => {
         <Navigation />
         <HeroSection />
         <TrustedBySection />
+        <ROICalculator />
         <WhyAISection />
+        <CaseStudies />
         <ProcessSection />
         <TestimonialsSection />
-        <SolutionsSection />
+        <PricingTiers />
+        <RiskReversal />
         <FAQSection />
+        <MultiStepContactForm />
         <ContactSection />
         <Footer />
+        <ExitIntentPopup />
       </div>
     </>
   );

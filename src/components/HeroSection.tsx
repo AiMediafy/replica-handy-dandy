@@ -21,23 +21,32 @@ const HeroSection = () => {
               Workflow n8n, agenci AI i optymalizacja procesów biznesowych. Zwiększ wydajność firmy dzięki inteligentnej automatyzacji AI.
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4">
               <Button 
                 size="lg" 
-                onClick={() => document.getElementById('rozwiazania')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => document.getElementById('multi-step-form')?.scrollIntoView({ behavior: 'smooth' })}
                 className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20"
               >
                 <Sparkles className="w-4 h-4 mr-2" aria-hidden="true" />
-                Zobacz automatyzacje AI
+                Zamów Darmowy Audyt
               </Button>
               <Button 
                 size="lg" 
                 variant="outline" 
-                onClick={() => window.location.href = '/rozwiazania'}
+                onClick={() => document.getElementById('proces')?.scrollIntoView({ behavior: 'smooth' })}
                 className="border-primary text-primary hover:bg-primary/10"
               >
-                Sprawdź nasze workflow n8n
+                Jak to działa?
               </Button>
+            </div>
+            
+            <div className="pt-4">
+              <button
+                onClick={() => document.getElementById('results')?.scrollIntoView({ behavior: 'smooth' })}
+                className="text-primary hover:underline text-sm flex items-center gap-1"
+              >
+                Przeczytaj case studies →
+              </button>
             </div>
           </div>
 
