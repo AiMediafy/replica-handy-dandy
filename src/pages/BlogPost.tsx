@@ -677,7 +677,7 @@ const BlogPost = () => {
     <>
       <SEO
         title={`${post.title} | Blog Mediafy AI`}
-        description={post.content.substring(0, 160).replace(/<[^>]*>/g, '')}
+        description={(content || post.content || '').substring(0, 160).replace(/<[^>]*>/g, '')}
         keywords="automatyzacje AI, AI w biznesie, obsługa klienta AI"
         canonical={`https://mediafy.ai/blog/${id}`}
         schema={schema}
