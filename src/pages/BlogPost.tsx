@@ -22,65 +22,81 @@ const blogPostsData: Record<string, any> = {
     title: "Jak AI zmienia obsługę klienta w 2024 roku",
     category: "Obsługa klienta",
     date: "15 marca 2024",
+    isoDate: "2024-03-15",
     readTime: "8 min",
     image: blogAiCustomerService,
-    contentFile: "/src/content/blog/jak-ai-zmienia-obsuge-klienta.html"
+    contentFile: "/src/content/blog/jak-ai-zmienia-obsuge-klienta.html",
+    keywords: "AI obsługa klienta, chatbot AI wsparcie, automatyzacja customer service, AI w obsłudze klienta 2024"
   },
   "automatyzacje-n8n-przewodnik": {
     title: "N8n - kompletny przewodnik po automatyzacji workflow",
     category: "Automatyzacja",
     date: "10 marca 2024",
+    isoDate: "2024-03-10",
     readTime: "8 min",
     image: blogN8nAutomation,
-    contentFile: "/src/content/blog/automatyzacje-n8n-przewodnik.html"
+    contentFile: "/src/content/blog/automatyzacje-n8n-przewodnik.html",
+    keywords: "n8n tutorial, workflow automation n8n, n8n vs zapier, automatyzacja n8n przewodnik, n8n po polsku"
   },
   "roi-z-wdrozen-ai": {
     title: "ROI z wdrożeń AI - case study 3 firm",
     category: "Case Studies",
     date: "5 marca 2024",
+    isoDate: "2024-03-05",
     readTime: "10 min",
     image: blogRoiAi,
-    contentFile: "/src/content/blog/roi-z-wdrozen-ai.html"
+    contentFile: "/src/content/blog/roi-z-wdrozen-ai.html",
+    keywords: "ROI AI, zwrot z inwestycji AI, case study AI, wdrożenia AI koszty, efektywność AI"
   },
   "agenci-ai-przewodnik": {
     title: "Agenci AI - kompletny przewodnik dla przedsiębiorców",
     category: "AI",
     date: "1 marca 2024",
+    isoDate: "2024-03-01",
     readTime: "10 min",
     image: blogAiAgents,
-    contentFile: "/src/content/blog/agenci-ai-przewodnik.html"
+    contentFile: "/src/content/blog/agenci-ai-przewodnik.html",
+    keywords: "agenci AI, autonomous AI agents, AI agent business, agenci AI przewodnik, AI automation agents"
   },
   "chatboty-ai-vs-tradycyjne": {
     title: "Chatboty AI vs tradycyjna obsługa - co wybrać?",
     category: "Obsługa klienta",
     date: "28 lutego 2024",
+    isoDate: "2024-02-28",
     readTime: "7 min",
     image: blogChatbotComparison,
-    contentFile: "/src/content/blog/chatboty-ai-vs-tradycyjne.html"
+    contentFile: "/src/content/blog/chatboty-ai-vs-tradycyjne.html",
+    keywords: "chatbot AI vs tradycyjny, porównanie chatbotów, AI chatbot korzyści, chatbot dla firmy, chatbot ROI"
   },
   "automatyzacja-email-marketing": {
     title: "Jak zautomatyzować email marketing z AI",
     category: "Marketing",
     date: "25 lutego 2024",
+    isoDate: "2024-02-25",
     readTime: "9 min",
     image: blogEmailAutomation,
-    contentFile: "/src/content/blog/automatyzacja-email-marketing.html"
+    contentFile: "/src/content/blog/automatyzacja-email-marketing.html",
+    keywords: "automatyzacja email marketing AI, AI email campaigns, marketing automation AI, personalizacja email AI"
   },
   "bezpieczenstwo-ai-w-firmie": {
     title: "Bezpieczeństwo danych przy wdrażaniu AI",
     category: "Bezpieczeństwo",
     date: "20 lutego 2024",
+    isoDate: "2024-02-20",
     readTime: "6 min",
     image: blogAiSecurity,
-    contentFile: "/src/content/blog/bezpieczenstwo-ai-w-firmie.html"
+    contentFile: "/src/content/blog/bezpieczenstwo-ai-w-firmie.html",
+    keywords: "bezpieczeństwo AI, ochrona danych AI, RODO AI, security AI wdrożenia, prywatność AI"
   },
   "koszty-wdrozenia-ai": {
     title: "Ile kosztuje wdrożenie AI? Kompletny breakdown",
     category: "Finanse",
     date: "15 lutego 2024",
+    isoDate: "2024-02-15",
     readTime: "8 min",
     image: blogAiCosts,
-    contentFile: "/src/content/blog/koszty-wdrozenia-ai.html"
+    contentFile: "/src/content/blog/koszty-wdrozenia-ai.html",
+    keywords: "koszty wdrożenia AI, ile kosztuje AI, budżet AI, cennik AI dla firm, AI pricing"
   }
 };
 
@@ -135,16 +151,33 @@ const BlogPost = () => {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": post.title,
-    "datePublished": post.date,
+    "image": {
+      "@type": "ImageObject",
+      "url": `https://mediafy.ai${post.image}`,
+      "width": 1200,
+      "height": 630
+    },
+    "datePublished": post.isoDate,
+    "dateModified": post.isoDate,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://mediafy.ai/blog/${id}`
+    },
     "author": {
       "@type": "Organization",
-      "name": "Mediafy AI"
+      "name": "Mediafy AI",
+      "url": "https://mediafy.ai"
     },
     "publisher": {
       "@type": "Organization",
       "name": "Mediafy AI",
-      "url": "https://mediafy.ai"
-    }
+      "url": "https://mediafy.ai",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mediafy.ai/og-image.jpg"
+      }
+    },
+    "description": (content || post.content || '').substring(0, 160).replace(/<[^>]*>/g, '')
   };
 
   return (
@@ -152,7 +185,7 @@ const BlogPost = () => {
       <SEO
         title={`${post.title} | Blog Mediafy AI`}
         description={(content || post.content || '').substring(0, 160).replace(/<[^>]*>/g, '')}
-        keywords="automatyzacje AI, AI w biznesie, obsługa klienta AI"
+        keywords={post.keywords || "automatyzacje AI, AI w biznesie, obsługa klienta AI"}
         canonical={`https://mediafy.ai/blog/${id}`}
         schema={schema}
       />

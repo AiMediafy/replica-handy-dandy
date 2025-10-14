@@ -1,5 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 interface BreadcrumbItem {
   label: string;
@@ -11,6 +12,44 @@ interface BreadcrumbsProps {
 }
 
 const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
+  useEffect(() => {
+    // Generate BreadcrumbList schema
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Strona główna",
+          "item": "https://mediafy.ai"
+        },
+        ...items.map((item, index) => ({
+          "@type": "ListItem",
+          "position": index + 2,
+          "name": item.label,
+          "item": `https://mediafy.ai${item.href}`
+        }))
+      ]
+    };
+
+    // Add or update breadcrumb schema
+    let scriptTag = document.querySelector('script[type="application/ld+json"][data-schema="breadcrumb"]') as HTMLScriptElement;
+    if (!scriptTag) {
+      scriptTag = document.createElement("script");
+      scriptTag.setAttribute("type", "application/ld+json");
+      scriptTag.setAttribute("data-schema", "breadcrumb");
+      document.head.appendChild(scriptTag);
+    }
+    scriptTag.textContent = JSON.stringify(breadcrumbSchema);
+
+    // Cleanup on unmount
+    return () => {
+      const tag = document.querySelector('script[type="application/ld+json"][data-schema="breadcrumb"]');
+      if (tag) tag.remove();
+    };
+  }, [items]);
+
   return (
     <nav aria-label="Breadcrumb" className="py-4">
       <ol className="flex items-center gap-2 text-sm">

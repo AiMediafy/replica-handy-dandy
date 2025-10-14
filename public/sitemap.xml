@@ -2,91 +2,121 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://mediafy.ai/</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2024-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://mediafy.ai/uslugi</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2024-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mediafy.ai/rozwiazania</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2024-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mediafy.ai/rozwiazania/chatbot-obslugi-klienta</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2024-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mediafy.ai/rozwiazania/automatyzacja-email-marketing</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2024-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mediafy.ai/rozwiazania/system-rezerwacji-ai</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2024-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mediafy.ai/rozwiazania/analiza-koszyka-ai</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2024-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mediafy.ai/rozwiazania/przetwarzanie-dokumentow</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2024-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mediafy.ai/rozwiazania/rekrutacja-ai</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2024-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mediafy.ai/blog</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2024-10-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mediafy.ai/blog/jak-ai-zmienia-obsuge-klienta</loc>
-    <lastmod>2025-03-15</lastmod>
+    <lastmod>2024-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediafy.ai/blog/automatyzacje-n8n-przewodnik</loc>
-    <lastmod>2025-03-10</lastmod>
+    <lastmod>2024-03-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediafy.ai/blog/roi-z-wdrozen-ai</loc>
-    <lastmod>2025-03-05</lastmod>
+    <lastmod>2024-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediafy.ai/blog/agenci-ai-przewodnik</loc>
+    <lastmod>2024-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediafy.ai/blog/chatboty-ai-vs-tradycyjne</loc>
+    <lastmod>2024-02-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediafy.ai/blog/automatyzacja-email-marketing</loc>
+    <lastmod>2024-02-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediafy.ai/blog/bezpieczenstwo-ai-w-firmie</loc>
+    <lastmod>2024-02-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mediafy.ai/blog/koszty-wdrozenia-ai</loc>
+    <lastmod>2024-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediafy.ai/o-nas</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2024-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://mediafy.ai/kontakt</loc>
-    <lastmod>2025-10-02</lastmod>
+    <lastmod>2024-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

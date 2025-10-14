@@ -40,9 +40,9 @@ const Footer = () => {
           <div>
             <h4 className="font-bold mb-4">Popularne Rozwiązania</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="/rozwiazania/automatyzacje-ai-ecommerce" className="text-muted-foreground hover:text-primary transition-colors">Automatyzacje AI e-commerce</a></li>
-              <li><a href="/rozwiazania/workflow-n8n-crm" className="text-muted-foreground hover:text-primary transition-colors">Workflow n8n CRM</a></li>
-              <li><a href="/blog/jak-wdrozyc-ai" className="text-muted-foreground hover:text-primary transition-colors">Jak wdrożyć AI w firmie</a></li>
+              <li><a href="/rozwiazania/analiza-koszyka-ai" className="text-muted-foreground hover:text-primary transition-colors">Analiza koszyka AI</a></li>
+              <li><a href="/rozwiazania/system-rezerwacji-ai" className="text-muted-foreground hover:text-primary transition-colors">System rezerwacji AI</a></li>
+              <li><a href="/blog/jak-ai-zmienia-obsuge-klienta" className="text-muted-foreground hover:text-primary transition-colors">Jak AI zmienia obsługę klienta</a></li>
               <li><a href="/#kontakt" className="text-muted-foreground hover:text-primary transition-colors">Bezpłatna konsultacja AI</a></li>
             </ul>
           </div>
