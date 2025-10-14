@@ -126,10 +126,10 @@ const Solutions = () => {
             
             <div className="mb-16 text-center space-y-4">
               <h1 className="text-5xl md:text-6xl font-bold">
-                Automatyzacje AI <span className="text-primary">dla Twojej Firmy</span>
+                Gotowe <span className="text-primary">Rozwiązania AI</span>
               </h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Gotowe pakiety lub pojedyncze rozwiązania - wszystko wdrożone w 7-14 dni
+                Sprawdzone workflow i agenci AI gotowe do wdrożenia w Twojej firmie. Zacznij automatyzować już dziś.
               </p>
             </div>
 
