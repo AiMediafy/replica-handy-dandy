@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
@@ -6,7 +7,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, ArrowRight, ArrowLeft } from "lucide-react";
+import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import blogAiCustomerService from "@/assets/blog-ai-customer-service.jpg";
 import blogN8nAutomation from "@/assets/blog-n8n-automation.jpg";
 import blogRoiAi from "@/assets/blog-roi-ai.jpg";
@@ -23,92 +24,7 @@ const blogPostsData: Record<string, any> = {
     date: "15 marca 2024",
     readTime: "8 min",
     image: blogAiCustomerService,
-    content: `
-      <p>Sztuczna inteligencja rewolucjonizuje sposób, w jaki firmy komunikują się z klientami. W 2024 roku obserwujemy bezprecedensowy wzrost zastosowań AI w obsłudze klienta - według raportu Gartner, do końca roku ponad 72% interakcji z klientami będzie obsługiwanych przez technologie AI.</p>
-
-      <p>Tradycyjne call center odchodzi do lamusa. W jego miejsce wchodzą inteligentne systemy, które nie tylko odpowiadają szybciej, ale przede wszystkim - lepiej rozumieją potrzeby klientów.</p>
-
-      <h2>Automatyzacja na nowym poziomie</h2>
-      <p>Chatboty AI nowej generacji potrafią nie tylko odpowiadać na podstawowe pytania, ale również rozumieć kontekst rozmowy, wykrywać emocje klienta i dostosowywać styl komunikacji.</p>
-
-      <h3>Kluczowe korzyści</h3>
-      <p>Firmy wdrażające AI w obsłudze klienta obserwują:</p>
-      <ul>
-        <li><strong>Redukcję czasu odpowiedzi o 95%</strong> - od kilku minut do kilku sekund</li>
-        <li><strong>Wzrost satysfakcji klientów o 40%</strong> - mierzony przez NPS i CSAT</li>
-        <li><strong>Obniżenie kosztów operacyjnych o 60%</strong> - mniej etatów przy większej wydajności</li>
-        <li><strong>Dostępność wsparcia 24/7</strong> - bez kosztów nocnych zmian</li>
-        <li><strong>Obsługa wielu języków jednocześnie</strong> - bez potrzeby zatrudniania native speakerów</li>
-      </ul>
-
-      <h2>Rozpoznawanie emocji i intencji</h2>
-      <p>Nowoczesne systemy AI nie tylko analizują tekst, ale również:</p>
-      <ul>
-        <li>Wykrywają frustrację klienta i automatycznie eskalują do człowieka</li>
-        <li>Dostosowują ton komunikacji do nastroju rozmówcy</li>
-        <li>Przewidują potrzeby klienta zanim je wyrazi</li>
-        <li>Proaktywnie oferują rozwiązania na podstawie historii</li>
-      </ul>
-
-      <p><strong>Przykład z praktyki:</strong> Jeden z naszych klientów - sklep e-commerce - wdrożył system wykrywający klientów z wysokim prawdopodobieństwem rezygnacji z zakupu. AI automatycznie oferuje im dodatkowe wsparcie lub promocję. Rezultat? Spadek porzuconych koszyków o 34%.</p>
-
-      <h2>Personalizacja w czasie rzeczywistym</h2>
-      <p>Nowoczesne systemy AI analizują w czasie rzeczywistym:</p>
-      <ul>
-        <li><strong>Historię zakupów</strong> - rekomendacje dostosowane do wcześniejszych wyborów</li>
-        <li><strong>Zachowanie na stronie</strong> - przeglądane produkty, czas spędzony w kategoriach</li>
-        <li><strong>Preferencje komunikacyjne</strong> - preferowany kanał, język, pora dnia</li>
-        <li><strong>Wartość klienta (CLV)</strong> - VIP klienci otrzymują priorytetowe traktowanie</li>
-        <li><strong>Kontekst obecnej sesji</strong> - co klient właśnie robił przed kontaktem</li>
-      </ul>
-
-      <h3>Case study: Firma transportowa</h3>
-      <p>Średnia firma transportowa wdrożyła AI do obsługi zgłoszeń dotyczących statusu przesyłek. System automatycznie:</p>
-      <ol>
-        <li>Identyfikuje klienta i jego przesyłkę</li>
-        <li>Dostarcza real-time tracking</li>
-        <li>Przewiduje potencjalne opóźnienia i informuje proaktywnie</li>
-        <li>Oferuje alternatywne terminy dostawy w razie problemów</li>
-        <li>Eskaluje do człowieka tylko w 8% przypadków</li>
-      </ol>
-
-      <p><strong>Rezultaty po 6 miesiącach:</strong> Redukcja zapytań do działu obsługi o 78%, wzrost satysfakcji o 45%, oszczędności 180,000 zł rocznie.</p>
-
-      <h2>Integracja z istniejącymi systemami</h2>
-      <p>Najskuteczniejsze wdrożenia AI w obsłudze klienta nie funkcjonują w próżni. Są zintegrowane z:</p>
-      <ul>
-        <li><strong>CRM</strong> - pełna historia interakcji z klientem</li>
-        <li><strong>ERP</strong> - dane o zamówieniach, stanach magazynowych</li>
-        <li><strong>Helpdesk</strong> - tickety, eskalacje, SLA</li>
-        <li><strong>E-commerce</strong> - koszyki, wishlisty, history</li>
-        <li><strong>Analytics</strong> - segmentacja, behavioral data</li>
-      </ul>
-
-      <h2>Wyzwania wdrożenia</h2>
-      <p>Nie wszystko jest proste. Najczęstsze problemy to:</p>
-
-      <h3>1. Jakość danych treningowych</h3>
-      <p>AI jest tylko tak dobre, jak dane, na których się uczyło. Potrzebujesz min. 500-1000 przykładowych konwersacji do skutecznego wytrenowania modelu.</p>
-
-      <h3>2. "Uncanny valley" efekt</h3>
-      <p>Klienci preferują albo wyraźnie sztucznego bota, albo prawdziwego człowieka. Bot udający człowieka budzi niepokój i frustrację.</p>
-
-      <h3>3. Edge cases</h3>
-      <p>AI doskonale radzi sobie z 80% standardowych przypadków, ale te pozostałe 20% wymaga ludzkiej interwencji. Kluczowa jest płynna eskalacja.</p>
-
-      <h2>Przyszłość już teraz</h2>
-      <p>Przewidujemy, że do końca 2024 roku ponad 80% firm B2C będzie wykorzystywać AI w obsłudze klienta. Te, które nie zdecydują się na transformację cyfrową, mogą stracić przewagę konkurencyjną.</p>
-
-      <p><strong>Najbliższe trendy:</strong></p>
-      <ul>
-        <li><strong>Voice AI</strong> - naturalne rozmowy głosowe zamiast czatu</li>
-        <li><strong>Multimodal AI</strong> - analiza tekstu, głosu, obrazu, wideo jednocześnie</li>
-        <li><strong>Proaktywne wsparcie</strong> - AI kontaktuje się zanim klient zgłosi problem</li>
-        <li><strong>Emotional AI</strong> - głębsza analiza emocji z tonacji głosu i mikro-wyrażeń</li>
-      </ul>
-
-      <p>Czas na wdrożenie AI to nie "może kiedyś" ale "teraz". Konkurencja nie śpi, a klienci coraz bardziej oczekują natychmiastowych, spersonalizowanych odpowiedzi. Pytanie nie brzmi "czy wdrożyć AI" tylko "kiedy zacząć".</p>
-    `
+    contentFile: "/src/content/blog/jak-ai-zmienia-obsuge-klienta.html"
   },
   "automatyzacje-n8n-przewodnik": {
     title: "N8n - kompletny przewodnik po automatyzacji workflow",
@@ -116,41 +32,7 @@ const blogPostsData: Record<string, any> = {
     date: "10 marca 2024",
     readTime: "8 min",
     image: blogN8nAutomation,
-    content: `
-      <p>N8n to open-source'owa platforma do automatyzacji workflow, która pozwala łączyć różne aplikacje i tworzyć zaawansowane procesy biznesowe bez pisania kodu.</p>
-
-      <h2>Dlaczego n8n?</h2>
-      <p>W przeciwieństwie do konkurencji jak Zapier czy Make, n8n oferuje:</p>
-      <ul>
-        <li>Pełną kontrolę nad danymi (self-hosting)</li>
-        <li>Brak limitów na operacje</li>
-        <li>400+ gotowych integracji</li>
-        <li>Niższe koszty przy większej skali</li>
-      </ul>
-
-      <h2>Praktyczne zastosowania</h2>
-      <p>N8n doskonale sprawdza się w automatyzacji:</p>
-
-      <h3>1. Marketing automation</h3>
-      <p>Automatyczne wysyłanie spersonalizowanych kampanii email, synchronizacja leadów między systemami, tworzenie raportów marketingowych.</p>
-
-      <h3>2. Obsługa klienta</h3>
-      <p>Automatyczne tworzenie ticketów z emaili, routing zgłoszeń do odpowiednich działów, integracja z chatbotami AI.</p>
-
-      <h3>3. E-commerce</h3>
-      <p>Synchronizacja zamówień, automatyzacja wysyłki potwierdzeń, zarządzanie stanami magazynowymi.</p>
-
-      <h2>Pierwsze kroki</h2>
-      <p>Zacznij od prostych workflow łączących 2-3 aplikacje. Stopniowo rozbudowuj o dodatkowe kroki i logikę warunkową. Pamiętaj o testowaniu każdego workflow przed wdrożeniem produkcyjnym.</p>
-
-      <h3>Best practices</h3>
-      <ul>
-        <li>Dokumentuj złożone workflow</li>
-        <li>Używaj error handlerów</li>
-        <li>Monitoruj wykonania</li>
-        <li>Optymalizuj najczęściej uruchamiane procesy</li>
-      </ul>
-    `
+    contentFile: "/src/content/blog/automatyzacje-n8n-przewodnik.html"
   },
   "roi-z-wdrozen-ai": {
     title: "ROI z wdrożeń AI - case study 3 firm",
@@ -158,179 +40,7 @@ const blogPostsData: Record<string, any> = {
     date: "5 marca 2024",
     readTime: "10 min",
     image: blogRoiAi,
-    content: `
-      <p>Analizujemy realne wdrożenia AI w trzech różnych firmach i mierzymy zwrot z inwestycji po pierwszym roku użytkowania. To nie są teoretyczne projekcje - to twarde dane finansowe z rzeczywistych biznesów.</p>
-
-      <p>W erze, gdzie każda złotówka się liczy, decyzja o inwestycji w AI musi być oparta na konkretnych liczbach, nie na modnych hasłach. Przedstawiamy kompleksową analizę kosztów, oszczędności i rezultatów.</p>
-
-      <h2>Case 1: E-commerce - Chatbot obsługi klienta</h2>
-      <p><strong>Branża:</strong> Sprzedaż online, 50 pracowników<br/>
-      <strong>Profil:</strong> Sklep internetowy z odzieżą, 5000+ produktów, 200 zamówień dziennie<br/>
-      <strong>Wdrożenie:</strong> Chatbot AI obsługujący standardowe zapytania</p>
-      
-      <h3>Struktura kosztów</h3>
-      <ul>
-        <li><strong>Setup fee:</strong> 25,000 zł (wdrożenie, integracje, szkolenie modelu)</li>
-        <li><strong>Koszt miesięczny:</strong> 2,999 zł (licencja + API + hosting)</li>
-        <li><strong>Koszt roczny:</strong> 35,988 zł + 25,000 = 60,988 zł</li>
-      </ul>
-
-      <h3>Rezultaty po roku:</h3>
-      <ul>
-        <li><strong>Obsłużonych 45,000 konwersacji automatycznie</strong> - średnio 125 dziennie</li>
-        <li><strong>Oszczędność 2 etatów obsługi klienta</strong> - 180,000 zł/rok (brutto z ZUS)</li>
-        <li><strong>Wzrost satysfakcji klientów o 35%</strong> - CSAT score z 3.2 do 4.3/5</li>
-        <li><strong>Redukcja porzuconych koszyków o 18%</strong> - dodatkowe 142,000 zł przychodu</li>
-        <li><strong>Średni czas odpowiedzi:</strong> z 8 minut do 12 sekund</li>
-        <li><strong>Resolution rate:</strong> 82% zapytań bez potrzeby eskalacji</li>
-      </ul>
-
-      <h3>Analiza ROI</h3>
-      <p><strong>Całkowite korzyści:</strong> 322,000 zł (oszczędności + dodatkowy przychód)<br/>
-      <strong>Całkowity koszt:</strong> 60,988 zł<br/>
-      <strong>Zysk netto:</strong> 261,012 zł<br/>
-      <strong>ROI: 428%</strong></p>
-
-      <p><em>"Najbardziej nas zaskoczyło, że chatbot nie tylko zastąpił ludzi, ale faktycznie obsługuje klientów lepiej - szybciej, dokładniej i bez frustracji związanych z czekaniem w kolejce." - Michał K., CEO</em></p>
-
-      <h2>Case 2: Firma produkcyjna - Przetwarzanie dokumentów</h2>
-      <p><strong>Branża:</strong> Produkcja, 200 pracowników<br/>
-      <strong>Profil:</strong> Producent komponentów elektronicznych<br/>
-      <strong>Wdrożenie:</strong> System OCR + AI do automatycznego przetwarzania faktur i dokumentów dostawców</p>
-
-      <h3>Wyzwanie biznesowe</h3>
-      <p>Firma otrzymywała 2000+ faktur miesięcznie w różnych formatach (PDF, papier, email, skany). Ręczne wprowadzanie zajmowało 1.5 etatu księgowości. Błędy w przepisywaniu powodowały opóźnienia w płatnościach i problemy z księgowością.</p>
-
-      <h3>Struktura kosztów</h3>
-      <ul>
-        <li><strong>Development:</strong> 40,000 zł (custom rozwiązanie dopasowane do procesów)</li>
-        <li><strong>Koszt miesięczny:</strong> 2,499 zł (infrastruktura + utrzymanie)</li>
-        <li><strong>Koszt roczny:</strong> 29,988 zł + 40,000 = 69,988 zł</li>
-      </ul>
-
-      <h3>Rezultaty po roku:</h3>
-      <ul>
-        <li><strong>Przetworzonych 24,000 dokumentów</strong> - średnio 2000 miesięcznie</li>
-        <li><strong>Oszczędność 1.5 etatu księgowości</strong> - 90,000 zł/rok</li>
-        <li><strong>Redukcja błędów o 95%</strong> - z ~200 błędów/rok do ~10</li>
-        <li><strong>Przyspieszenie procesowania o 85%</strong> - z 3 dni do ~7 godzin</li>
-        <li><strong>Lepsza kontrola cash flow</strong> - terminowe płatności = wykorzystanie rabatów early payment</li>
-        <li><strong>Oszczędności z rabatów:</strong> dodatkowe 28,000 zł/rok</li>
-      </ul>
-
-      <h3>Analiza ROI</h3>
-      <p><strong>Całkowite korzyści:</strong> 118,000 zł (oszczędności na etatach + rabaty)<br/>
-      <strong>Całkowity koszt:</strong> 69,988 zł<br/>
-      <strong>Zysk netto:</strong> 48,012 zł<br/>
-      <strong>ROI: 169%</strong></p>
-
-      <p><em>"Nie spodziewaliśmy się, że AI będzie w stanie obsłużyć nasze specyficzne dokumenty. Po treningu system radzi sobie świetnie nawet z ręcznie pisanymi notkami na fakturach." - Anna M., CFO</em></p>
-
-      <h2>Case 3: Agencja marketingowa - Email automation</h2>
-      <p><strong>Branża:</strong> Marketing, 30 pracowników<br/>
-      <strong>Profil:</strong> Agencja digital marketingu obsługująca 50+ klientów<br/>
-      <strong>Wdrożenie:</strong> Automatyzacja kampanii emailowych z AI (personalizacja, timing, content)</p>
-
-      <h3>Sytuacja przed wdrożeniem</h3>
-      <p>Zespół spędzał 40+ godzin tygodniowo na manualne tworzenie i wysyłanie kampanii email. Personalizacja była minimalna (tylko imię). A/B testy były rzadkie ze względu na brak czasu. Open rate: 18%, CTR: 2.1%.</p>
-
-      <h3>Struktura kosztów</h3>
-      <ul>
-        <li><strong>Setup:</strong> 18,000 zł (integracje z ESP, CRM, training)</li>
-        <li><strong>Koszt miesięczny:</strong> 1,999 zł (platforma + API calls)</li>
-        <li><strong>Koszt roczny:</strong> 23,988 zł + 18,000 = 41,988 zł</li>
-      </ul>
-
-      <h3>Rezultaty po roku:</h3>
-      <ul>
-        <li><strong>Open rate wzrósł z 18% do 31%</strong> - improvement o 72%</li>
-        <li><strong>CTR wzrósł z 2.1% do 4.8%</strong> - improvement o 129%</li>
-        <li><strong>Conversion rate wzrósł o 87%</strong></li>
-        <li><strong>Oszczędność 25h/tydzień</strong> - zespół może obsłużyć +10 klientów bez dodatkowych etatów</li>
-        <li><strong>Zwiększenie przychodów o 320,000 zł</strong> - nowi klienci + lepsze rezultaty = retention</li>
-        <li><strong>Redukcja churn rate o 23%</strong> - klienci widzą lepsze wyniki</li>
-      </ul>
-
-      <h3>Analiza ROI</h3>
-      <p><strong>Całkowite korzyści:</strong> 320,000 zł (głównie dodatkowy przychód)<br/>
-      <strong>Całkowity koszt:</strong> 41,988 zł<br/>
-      <strong>Zysk netto:</strong> 278,012 zł<br/>
-      <strong>ROI: 662%</strong></p>
-
-      <p><em>"AI nie tylko zaoszczędziło nam czas, ale faktycznie poprawiło jakość kampanii. Klienci widzą lepsze wyniki, co przekłada się na długoterminowe relacje i polecenia." - Piotr S., Managing Director</em></p>
-
-      <h2>Porównanie kluczowych metryk</h2>
-      
-      <table>
-        <tr>
-          <th>Metryka</th>
-          <th>E-commerce</th>
-          <th>Produkcja</th>
-          <th>Marketing</th>
-        </tr>
-        <tr>
-          <td><strong>Inwestycja początkowa</strong></td>
-          <td>25,000 zł</td>
-          <td>40,000 zł</td>
-          <td>18,000 zł</td>
-        </tr>
-        <tr>
-          <td><strong>Koszt miesięczny</strong></td>
-          <td>2,999 zł</td>
-          <td>2,499 zł</td>
-          <td>1,999 zł</td>
-        </tr>
-        <tr>
-          <td><strong>Payback period</strong></td>
-          <td>2.3 miesiące</td>
-          <td>7.1 miesięcy</td>
-          <td>1.6 miesiąca</td>
-        </tr>
-        <tr>
-          <td><strong>ROI rok 1</strong></td>
-          <td>428%</td>
-          <td>169%</td>
-          <td>662%</td>
-        </tr>
-      </table>
-
-      <h2>Wspólne czynniki sukcesu</h2>
-
-      <h3>1. Jasno określony problem biznesowy</h3>
-      <p>Wszystkie trzy firmy wiedziały dokładnie, jaki problem chcą rozwiązać. Nie wdrażały AI "bo jest modne", ale dla konkretnych, mierzalnych celów.</p>
-
-      <h3>2. Zaangażowanie zespołu</h3>
-      <p>W każdym przypadku kluczowi użytkownicy byli włączeni od początku. Szkolenia, feedback sessions, iteracje - to zapewniło adopcję.</p>
-
-      <h3>3. Realistyczne oczekiwania</h3>
-      <p>Żadna firma nie oczekiwała 100% automatyzacji. Zaplanowały hybrydowe rozwiązania z eskalacją do człowieka.</p>
-
-      <h3>4. Iteracyjne podejście</h3>
-      <p>Zaczynały od MVP, testowały, uczyły się, skalowały. Nie próbowały zbudować perfekcyjnego rozwiązania od razu.</p>
-
-      <h3>5. Mierzenie KPI od dnia 1</h3>
-      <p>Baseline metrics before → ciągły monitoring after → data-driven optimization.</p>
-
-      <h2>Kluczowe wnioski</h2>
-
-      <p><strong>Średni ROI z wdrożeń AI w pierwszym roku to 420%.</strong> To nie są odosobnione przypadki - podobne rezultaty obserwujemy u dziesiątek innych klientów.</p>
-
-      <p><strong>Payback period waha się od 1.6 do 7 miesięcy</strong> - nawet w najbardziej konserwatywnym scenariuszu inwestycja zwraca się w mniej niż rok.</p>
-
-      <p><strong>Korzyści rosną w czasie.</strong> Rok 2 i 3 przynoszą jeszcze lepsze wyniki, bo system się uczy, zespół odkrywa nowe use case'y, a koszty wdrożenia już nie obciążają budżetu.</p>
-
-      <h2>Jak zapewnić sukces swojego wdrożenia?</h2>
-
-      <ol>
-        <li><strong>Zacznij od quick win</strong> - wybierz jeden, dobrze zdefiniowany problem</li>
-        <li><strong>Zmierz baseline</strong> - bez tego nie udowodnisz ROI</li>
-        <li><strong>Zaplanuj pilot</strong> - 2-3 miesiące testów przed full rollout</li>
-        <li><strong>Włącz użytkowników</strong> - ich feedback jest bezcenny</li>
-        <li><strong>Bądź cierpliwy ale mierz</strong> - rezultaty przychodzą po 3-6 miesiącach</li>
-      </ol>
-
-      <p>AI to nie koszt - to inwestycja, która się zwraca. Pytanie nie brzmi "czy stać nas na wdrożenie AI", ale "czy stać nas na to, żeby pozostać w tyle za konkurencją".</p>
-    `
+    contentFile: "/src/content/blog/roi-z-wdrozen-ai.html"
   },
   "agenci-ai-przewodnik": {
     title: "Agenci AI - kompletny przewodnik dla przedsiębiorców",
@@ -916,6 +626,16 @@ const recentPosts = [
 const BlogPost = () => {
   const { id } = useParams();
   const post = id ? blogPostsData[id] : null;
+  const [content, setContent] = useState("");
+
+  useEffect(() => {
+    if (post?.contentFile) {
+      fetch(post.contentFile)
+        .then(res => res.text())
+        .then(html => setContent(html))
+        .catch(err => console.error("Error loading content:", err));
+    }
+  }, [post]);
 
   if (!post) {
     return (
@@ -1008,8 +728,11 @@ const BlogPost = () => {
                   prose-li:my-3 prose-li:leading-relaxed
                   prose-strong:text-foreground prose-strong:font-semibold
                   prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+                  prose-table:w-full prose-table:my-8
+                  prose-th:border prose-th:border-border prose-th:p-3 prose-th:text-left
+                  prose-td:border prose-td:border-border prose-td:p-3
                   [&>p:first-of-type]:text-xl [&>p:first-of-type]:text-foreground [&>p:first-of-type]:font-medium [&>p:first-of-type]:leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: post.content }}
+                dangerouslySetInnerHTML={{ __html: content }}
               />
             </article>
 
