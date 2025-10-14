@@ -10,7 +10,6 @@ import PricingTiers from "@/components/PricingTiers";
 import RiskReversal from "@/components/RiskReversal";
 import FAQSection from "@/components/FAQSection";
 import MultiStepContactForm from "@/components/MultiStepContactForm";
-import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import SEO from "@/components/SEO";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
@@ -80,9 +79,8 @@ const Index = () => {
         <TestimonialsSection />
         <PricingTiers />
         <RiskReversal />
-        <FAQSection />
         <MultiStepContactForm />
-        <ContactSection />
+        <FAQSection />
         <Footer />
         <ExitIntentPopup />
       </div>

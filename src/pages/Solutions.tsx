@@ -5,7 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { MessageSquare, Mail, Calendar, ShoppingCart, FileText, Users } from "lucide-react";
+import { MessageSquare, Mail, Calendar, ShoppingCart, FileText, Users, Check, X, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const solutions = [
@@ -133,7 +133,197 @@ const Solutions = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            {/* Pricing Packages Section */}
+            <div className="mb-20">
+              <div className="text-center mb-12 space-y-4">
+                <h2 className="text-4xl md:text-5xl font-bold">
+                  Wybierz Pakiet dla Swojej Firmy
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                  Transparentne ceny bez ukrytych kosztów. Płacisz za rezultaty, nie za czas.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-12">
+                {/* STARTER */}
+                <Card className="border-border hover:border-primary/50 transition-all duration-300">
+                  <Badge variant="secondary" className="absolute -top-3 right-4">
+                    Dla małych firm
+                  </Badge>
+                  <CardHeader className="text-center pb-8 pt-8">
+                    <h3 className="text-2xl font-bold mb-2">Starter</h3>
+                    <p className="text-sm text-muted-foreground mb-6">
+                      Idealne na początek transformacji AI
+                    </p>
+                    <div className="space-y-1">
+                      <div className="text-4xl md:text-5xl font-bold">
+                        1,999 zł<span className="text-base font-normal">/mies</span>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>1 chatbot AI (24/7 obsługa klienta)</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>3 workflow n8n</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Integracja z 5 systemami</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Email support (odp. do 24h)</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Miesięczny raport wydajności</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <X className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-0.5" />
+                        <span className="text-muted-foreground">Dedykowany agent AI</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <X className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-0.5" />
+                        <span className="text-muted-foreground">Custom integracje</span>
+                      </li>
+                    </ul>
+                    <Button variant="outline" className="w-full" size="lg" asChild>
+                      <Link to="/kontakt">Wybierz Starter</Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+
+                {/* BUSINESS - Popular */}
+                <Card className="relative border-primary shadow-xl shadow-primary/20 md:scale-105">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                    <Badge className="bg-primary text-primary-foreground px-4 py-1">
+                      <Sparkles className="w-3 h-3 mr-1 inline" />
+                      Najpopularniejszy
+                    </Badge>
+                  </div>
+                  <CardHeader className="text-center pb-8 pt-8">
+                    <h3 className="text-2xl font-bold mb-2">Business</h3>
+                    <p className="text-sm text-muted-foreground mb-6">
+                      Kompleksowa automatyzacja dla rozwijających się firm
+                    </p>
+                    <div className="space-y-1">
+                      <div className="text-4xl md:text-5xl font-bold">
+                        4,999 zł<span className="text-base font-normal">/mies</span>
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>3 agenci AI (autonomiczne zadania)</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>10 workflow n8n</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Unlimited integracje</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Priorytetowy support (odp. do 4h)</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Tygodniowe raporty + optymalizacja</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Szkolenie zespołu (2x rocznie)</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>1 custom AI agent</span>
+                      </li>
+                    </ul>
+                    <Button className="w-full bg-primary" size="lg" asChild>
+                      <Link to="/kontakt">Wybierz Business</Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+
+                {/* ENTERPRISE */}
+                <Card className="border-border hover:border-primary/50 transition-all duration-300">
+                  <Badge variant="secondary" className="absolute -top-3 right-4">
+                    Dla korporacji
+                  </Badge>
+                  <CardHeader className="text-center pb-8 pt-8">
+                    <h3 className="text-2xl font-bold mb-2">Enterprise</h3>
+                    <p className="text-sm text-muted-foreground mb-6">
+                      Dedykowane rozwiązania dla dużych organizacji
+                    </p>
+                    <div className="space-y-1">
+                      <div className="text-4xl md:text-5xl font-bold">
+                        Wycena
+                      </div>
+                      <div className="text-sm text-muted-foreground">
+                        indywidualna
+                      </div>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Unlimited agenci AI</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Unlimited workflow n8n</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Dedykowany AI developer (on-demand)</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>SLA 99.9% uptime</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Support 24/7 (telefon + Slack)</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>White-label rozwiązania</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Audyt bezpieczeństwa RODO</span>
+                      </li>
+                    </ul>
+                    <Button variant="outline" className="w-full" size="lg" asChild>
+                      <Link to="/kontakt">Umów Konsultację</Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            {/* Individual Solutions Section */}
+            <div className="mb-12">
+              <div className="text-center mb-12 space-y-4">
+                <h2 className="text-4xl md:text-5xl font-bold">
+                  Lub Wybierz <span className="text-primary">Pojedyncze Rozwiązanie</span>
+                </h2>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                  Potrzebujesz tylko konkretnego narzędzia? Wybierz z naszej biblioteki gotowych automatyzacji.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {solutions.map((solution) => (
                 <Card key={solution.id} className="bg-card border-border hover:border-primary/50 transition-all duration-300 flex flex-col">
                   <CardHeader>
@@ -170,6 +360,7 @@ const Solutions = () => {
                   </CardContent>
                 </Card>
               ))}
+              </div>
             </div>
 
             <div className="bg-secondary/30 rounded-lg p-8 md:p-12 text-center">
