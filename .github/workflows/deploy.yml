@@ -32,6 +32,11 @@ jobs:
       - name: Build
         run: bun run build
 
+      - name: Ensure .nojekyll exists
+        run: |
+          touch dist/.nojekyll
+          echo "✓ .nojekyll file created in dist/"
+
       - name: Debug - Show dist/index.html content
         run: |
           echo "=== Content of dist/index.html ==="
